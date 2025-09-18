@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINK EXPRESS - Versements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bs-corail: #FF7F50;
+            --bs-bleu-profond: #2C3E50;
+            --bs-bleu-celeste: #4A6491;
+            --bs-blanc-creme: #F8F9FA;
+            --bs-gris-anthracite: #34495E;
+            --orange-money: #e67e22;
+            --mtn-money: #f1c40f;
+        }
+        body {
+            background-color: var(--bs-blanc-creme);
+            font-family: sans-serif;
+            overflow-x: hidden;
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: var(--bs-bleu-profond);
+            min-height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: white;
+            padding: 20px;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        .sidebar.collapsed {
+            margin-left: -250px;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            flex-grow: 1;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content.expanded {
+            margin-left: 0;
+        }
+        .nav-link {
+            color: white;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .nav-link:hover {
+            background-color: var(--bs-bleu-celeste);
+            color: white;
+        }
+        .nav-link.active {
+            background-color: var(--bs-corail);
+            color: white;
+        }
+        .top-header {
+            background-color: white;
+            padding: 15px 20px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-header .toggler {
+            font-size: 1.5rem;
+            color: var(--bs-bleu-profond);
+            cursor: pointer;
+        }
+        .header-title-container {
+            flex-grow: 1;
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-corail {
+            background-color: var(--bs-corail);
+            border-color: var(--bs-corail);
+            color: white;
+        }
+        .btn-corail:hover {
+            background-color: #FF6347;
+            border-color: #FF6347;
+            color: white;
+        }
+        .bg-orange-money { background-color: var(--orange-money); }
+        .bg-mtn-money { background-color: var(--mtn-money); }
+        .bg-corail-dark { background-color: var(--bs-corail); }
+        .bg-bleu-profond-dark { background-color: var(--bs-gris-anthracite); }
+        .table-responsive {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        .table thead {
+            background-color: var(--bs-bleu-profond);
+            color: white;
+            font-size: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        .table td {
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+        .table > :not(caption)>*>* {
+            padding: 0.4rem 0.5rem;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .table .btn-sm {
+            padding: 0.2rem 0.4rem;
+            font-size: 0.75rem;
+        }
+        .pagination-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .pagination-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #notification-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+        }
+        .stats-cards-row {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+        .stats-card {
+            min-width: 220px;
+            flex: 1 1 auto;
+            text-align: center;
+            padding: 1rem;
+        }
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .filter-container > .input-group:first-child {
+            max-width: 300px;
+        }
+        .filter-container .date-range {
+            display: flex;
+            gap: 0.5rem;
+            flex-grow: 1;
+            max-width: 400px;
+        }
+        .filter-container .date-range .input-group {
+            width: 50%;
+        }
+        .filter-container .form-select {
+            flex-grow: 1;
+            max-width: 200px;
+        }
+        .filter-container .btn {
+            background-color: #FF6347;
+            color: #ffffff;
+        }
+        .filter-container .btn:hover {
+            background-color: var(--bs-bleu-profond);
+            border-color: var(--bs-bleu-profond);
+        }
+        .filter-container .btn.ms-auto {
+            margin-left: auto;
+        }
+        .operator-dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .status-dot {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .status-pending { background-color: #f39c12; }
+        .status-paid { background-color: #2ecc71; }
+        .status-partially_paid { background-color: #3498db; }
+
+        .remittance-details-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .remittance-details-list li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 5px;
+        }
+
+        .history-item {
+            border-left: 3px solid #ced4da;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="notification-container"></div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header d-flex justify-content-center">
+            <img src="wink-logo.png" alt="Logo WINK EXPRESS" style="width: 150px;">
+        </div>
+        <ul class="nav flex-column mt-4">
+            <li class="nav-item"><a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Tableau de bord</a></li>
+            <li class="nav-item"><a class="nav-link" href="orders.html"><i class="bi bi-box-seam"></i> Commandes</a></li>
+            <li class="nav-item"><a class="nav-link" href="deliverymen.html"><i class="bi bi-bicycle"></i> Livreurs</a></li>
+            <li class="nav-item"><a class="nav-link" href="shops.html"><i class="bi bi-shop"></i> Marchands</a></li>
+            <li class="nav-item"><a class="nav-link" href="reports.html"><i class="bi bi-file-earmark-bar-graph"></i> Rapports</a></li>
+            <li class="nav-item"><a class="nav-link" href="remittances.html"><i class="bi bi-wallet"></i> Versements</a></li>
+            <li class="nav-item"><a class="nav-link" href="users.html"><i class="bi bi-person"></i> Utilisateurs</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <div class="top-header">
+            <i class="bi bi-list toggler" id="sidebar-toggler"></i>
+            <h1 class="header-title-container h4 mb-0 ms-3">Gestion des versements</h1>
+            <div class="header-actions">
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://ui-avatars.com/api/?name=A&size=32&background=2C3E50&color=fff&rounded=true" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+                        <span id="userName">Admin</span>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">Profil</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logoutBtn">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-4">
+
+        <div class="stats-cards-row mb-4">
+            <div class="card bg-orange-money text-white stats-card">
+                <div class="card-body py-2">
+                    <h6 class="card-title text-uppercase mb-0">Orange Money</h6>
+                    <h4 class="card-text fw-bold mb-0 mt-1" id="orangeMoneyTotal">0 FCFA</h4>
+                    <small id="orangeMoneyTransactions" class="text-white-50">0 transactions</small>
+                </div>
+            </div>
+            <div class="card bg-mtn-money text-white stats-card">
+                <div class="card-body py-2">
+                    <h6 class="card-title text-uppercase mb-0">MTN Mobile Money</h6>
+                    <h4 class="card-text fw-bold mb-0 mt-1" id="mtnMoneyTotal">0 FCFA</h4>
+                    <small id="mtnMoneyTransactions" class="text-white-50">0 transactions</small>
+                </div>
+            </div>
+            <div class="card bg-corail-dark text-white stats-card">
+                <div class="card-body py-2">
+                    <h6 class="card-title text-uppercase mb-0">Total à verser</h6>
+                    <h4 class="card-text fw-bold mb-0 mt-1" id="totalRemittanceAmount">0 FCFA</h4>
+                    <small id="totalTransactions" class="text-white-50">0 transactions</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-4">
+            <div class="filter-container d-flex flex-wrap align-items-center gap-2 mb-3">
+                <div class="input-group">
+                    <span class="input-group-text">Rechercher</span>
+                    <input type="text" class="form-control" placeholder="Nom, téléphone..." id="searchInput">
+                </div>
+        
+                <div class="date-range d-flex flex-grow-1 gap-2">
+                    <div class="input-group">
+                        <span class="input-group-text">Du</span>
+                        <input type="date" class="form-control" id="startDateFilter">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Au</span>
+                        <input type="date" class="form-control" id="endDateFilter">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
+                    <select class="form-select" id="statusFilter" style="width: auto;">
+                        <option value="">Statut : Tous</option>
+                        <option value="pending">En attente</option>
+                        <option value="paid">Payé</option>
+                        <option value="partially_paid">Partiellement payé</option>
+                    </select>
+
+                    <button class="btn btn-secondary" id="filterBtn">Filtrer</button>
+                    
+                    <button class="btn btn-primary" id="exportPdfBtn">Exporter en PDF</button>
+                    <button class="btn btn-corail" id="bulkPayBtn">Tout verser</button>
+                </div>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nom boutique</th>
+                            <th>Nom versement</th>
+                            <th>Téléphone</th>
+                            <th>Opérateur</th>
+                            <th>Montant à verser</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="remittanceTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination-container">
+                <div class="d-flex align-items-center gap-2">
+                    <label for="itemsPerPage" class="form-label mb-0 me-2 text-nowrap">Lignes par page:</label>
+                    <select class="form-select form-select-sm w-auto" id="itemsPerPage">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <div class="d-flex align-items-center">
+                    <span id="paginationInfo" class="me-3"></span>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-sm mb-0">
+                            <li class="page-item" id="firstPage"><a class="page-link" href="#"><i class="bi bi-skip-start-fill"></i></a></li>
+                            <li class="page-item" id="prevPage"><a class="page-link" href="#"><i class="bi bi-caret-left-fill"></i></a></li>
+                            <li class="page-item disabled"><span class="page-link" id="currentPageDisplay">1</span></li>
+                            <li class="page-item" id="nextPage"><a class="page-link" href="#"><i class="bi bi-caret-right-fill"></i></a></li>
+                            <li class="page-item" id="lastPage"><a class="page-link" href="#"><i class="bi bi-skip-end-fill"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="editPaymentModal" tabindex="-1" aria-labelledby="editPaymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editPaymentModalLabel">Modifier les informations de versement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="editPaymentForm">
+                    <div class="modal-body">
+                        <input type="hidden" id="editShopId">
+                        <div class="mb-3">
+                            <label for="paymentNameInput" class="form-label">Nom du versement</label>
+                            <input type="text" class="form-control" id="paymentNameInput" placeholder="Nom pour la transaction...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumberInput" class="form-label">Numéro de téléphone</label>
+                            <input type="tel" class="form-control" id="phoneNumberInput" placeholder="Ex: 690123456">
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentOperatorSelect" class="form-label">Opérateur</label>
+                            <select class="form-select" id="paymentOperatorSelect">
+                                <option value="" selected>Sélectionner un opérateur</option>
+                                <option value="Orange Money">Orange Money</option>
+                                <option value="MTN Mobile Money">MTN Mobile Money</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-corail">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="partiallyPaidModal" tabindex="-1" aria-labelledby="partiallyPaidModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="partiallyPaidModalLabel">Versement partiel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="partiallyPaidForm">
+                    <div class="modal-body">
+                        <p id="partiallyPaidInfo"></p>
+                        <div class="mb-3">
+                            <label for="partialAmountInput" class="form-label">Montant avancé</label>
+                            <input type="number" class="form-control" id="partialAmountInput" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-corail">Confirmer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="remittanceDetailsModal" tabindex="-1" aria-labelledby="remittanceDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="remittanceDetailsModalLabel">Détails des versements pour <span id="detailsShopName"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="mb-0">Solde actuel à verser : <span id="detailsAmountDue" class="fw-bold text-success"></span></h6>
+                        <span id="detailsStatusBadge" class="badge"></span>
+                    </div>
+
+                    <h6 class="mt-4">Historique des versements</h6>
+                    <hr>
+                    <div id="remittanceHistoryContainer">
+                    </div>
+
+                    <h6 class="mt-4">Détails des créances en attente</h6>
+                    <hr>
+                    <div id="pendingDebtsContainer">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/remittances.js"></script>
+</body>
+</html>
