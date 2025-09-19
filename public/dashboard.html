@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINK EXPRESS - Tableau de bord</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bs-corail: #FF7F50;
+            --bs-bleu-profond: #2C3E50;
+            --bs-bleu-celeste: #4A6491;
+            --bs-blanc-creme: #F8F9FA;
+            --bs-gris-anthracite: #34495E;
+        }
+        body {
+            background-color: var(--bs-blanc-creme);
+            font-family: sans-serif;
+            overflow-x: hidden;
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: var(--bs-bleu-profond);
+            min-height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: white;
+            padding: 20px;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        .sidebar.collapsed {
+            margin-left: -250px;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            flex-grow: 1;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content.expanded {
+            margin-left: 0;
+        }
+        .nav-link {
+            color: white;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .nav-link:hover {
+            background-color: var(--bs-bleu-celeste);
+            color: white;
+        }
+       
+        .top-header {
+            background-color: white;
+            padding: 15px 20px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-header .toggler {
+            font-size: 1.5rem;
+            color: var(--bs-bleu-profond);
+            cursor: pointer;
+        }
+        .header-title-container {
+            flex-grow: 1;
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        .card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-stat {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--bs-bleu-profond);
+        }
+        .card-text {
+            color: var(--bs-gris-anthracite);
+        }
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header d-flex justify-content-center">
+            <img src="wink-logo.png" alt="Logo WINK EXPRESS" style="width: 150px;">
+        </div>
+        <ul class="nav flex-column mt-4">
+            <li class="nav-item"><a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Tableau de bord</a></li>
+            <li class="nav-item"><a class="nav-link" href="orders.html"><i class="bi bi-box-seam"></i> Commandes</a></li>
+            <li class="nav-item"><a class="nav-link" href="deliverymen.html"><i class="bi bi-bicycle"></i> Livreurs</a></li>
+            <li class="nav-item"><a class="nav-link" href="shops.html"><i class="bi bi-shop"></i> Marchands</a></li>
+            <li class="nav-item"><a class="nav-link" href="reports.html"><i class="bi bi-file-earmark-bar-graph"></i> Rapports</a></li>
+            <li class="nav-item"><a class="nav-link" href="remittances.html"><i class="bi bi-wallet"></i> Versements</a></li>
+            <li class="nav-item"><a class="nav-link" href="users.html"><i class="bi bi-person"></i> Utilisateurs</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <div class="top-header">
+            <i class="bi bi-list toggler" id="sidebar-toggler"></i>
+            <h1 class="header-title-container h4 mb-0 ms-3">Tableau de bord</h1>
+            <div class="header-actions">
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://ui-avatars.com/api/?name=A&size=32&background=2C3E50&color=fff&rounded=true" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+                        <span id="userName">Admin</span>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">Profil</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logoutBtn">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-4">
+        
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <label for="startDate" class="form-label">Date de début</label>
+                <input type="date" class="form-control" id="startDate" required>
+            </div>
+            <div class="col-md-6">
+                <label for="endDate" class="form-label">Date de fin</label>
+                <input type="date" class="form-control" id="endDate" required>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h6 class="card-title text-uppercase text-muted">Total des courses</h6>
+                        <p class="card-stat" id="totalOrders"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h6 class="card-title text-uppercase text-muted">Courses livrées</h6>
+                        <p class="card-stat text-success" id="deliveredOrders"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h6 class="card-title text-uppercase text-muted">Revenu total</h6>
+                        <p class="card-stat text-info" id="totalRevenue"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h6 class="card-title text-uppercase text-muted">Frais de livraison</h6>
+                        <p class="card-stat text-danger" id="totalFees"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4 mb-4 flex-grow-1">
+            <div class="col-lg-12">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Chiffre d'affaires journalier (Frais de courses)</h5>
+                    </div>
+                    <div class="card-body p-4 chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Top 5 Meilleurs Livreurs</h5>
+                    </div>
+                    <div class="card-body p-4 chart-container">
+                        <canvas id="deliverymenChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card h-100 d-flex flex-column">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Top 5 Meilleurs Marchands</h5>
+                    </div>
+                    <div class="card-body p-4 chart-container">
+                        <canvas id="shopsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Logique pour le menu rétractable et la déconnexion
+        document.getElementById('sidebar-toggler').addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+            document.getElementById('main-content').classList.toggle('expanded');
+        });
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            alert('Déconnexion réussie !');
+            window.location.href = 'index.html';
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+
+        // --- Données de test (simulent une base de données) ---
+        const allOrders = [
+            { id: 1, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 1000, fees: 500, date: '2025-09-01' },
+            { id: 2, shop: 'Épicerie B', deliveryman: 'Paul', status: 'en attente', revenue: 1500, fees: 0, date: '2025-09-01' },
+            { id: 3, shop: 'Restaurant C', deliveryman: 'Jacques', status: 'annulée', revenue: 0, fees: 0, date: '2025-09-02' },
+            { id: 4, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 2500, fees: 800, date: '2025-09-02' },
+            { id: 5, shop: 'Épicerie B', deliveryman: 'Jacques', status: 'livrée', revenue: 1200, fees: 500, date: '2025-09-03' },
+            { id: 6, shop: 'Restaurant C', deliveryman: 'Paul', status: 'livrée', revenue: 800, fees: 400, date: '2025-09-04' },
+            { id: 7, shop: 'Restaurant C', deliveryman: 'Paul', status: 'livrée', revenue: 3000, fees: 900, date: '2025-09-05' },
+            { id: 8, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 500, fees: 300, date: '2025-09-06' },
+            { id: 9, shop: 'Épicerie B', deliveryman: 'Jacques', status: 'livrée', revenue: 2000, fees: 600, date: '2025-09-07' },
+            { id: 10, shop: 'Restaurant C', deliveryman: 'Paul', status: 'livrée', revenue: 1800, fees: 550, date: '2025-09-08' },
+            { id: 11, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 1500, fees: 600, date: '2025-09-09' },
+            { id: 12, shop: 'Épicerie B', deliveryman: 'Paul', status: 'livrée', revenue: 2200, fees: 750, date: '2025-09-10' },
+            { id: 13, shop: 'Restaurant C', deliveryman: 'Jacques', status: 'livrée', revenue: 1100, fees: 450, date: '2025-09-11' },
+            { id: 14, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 1900, fees: 650, date: '2025-09-12' },
+            { id: 15, shop: 'Épicerie B', deliveryman: 'Jacques', status: 'livrée', revenue: 900, fees: 400, date: '2025-09-13' },
+            { id: 16, shop: 'Restaurant C', deliveryman: 'Paul', status: 'livrée', revenue: 2500, fees: 800, date: '2025-09-14' },
+            { id: 17, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 1400, fees: 500, date: '2025-09-15' },
+            { id: 18, shop: 'Épicerie B', deliveryman: 'Paul', status: 'livrée', revenue: 1600, fees: 550, date: '2025-09-16' },
+            { id: 19, shop: 'Restaurant C', deliveryman: 'Jacques', status: 'livrée', revenue: 2100, fees: 700, date: '2025-09-17' },
+            { id: 20, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 2300, fees: 750, date: '2025-09-18' },
+            { id: 21, shop: 'Restaurant C', deliveryman: 'Jacques', status: 'livrée', revenue: 1800, fees: 600, date: '2025-09-19' },
+            { id: 22, shop: 'Boulangerie A', deliveryman: 'Pierre', status: 'livrée', revenue: 1700, fees: 550, date: '2025-09-20' },
+            { id: 23, shop: 'Épicerie B', deliveryman: 'Paul', status: 'livrée', revenue: 1300, fees: 450, date: '2025-09-21' }
+        ];
+
+        // --- Logique du tableau de bord ---
+        const startDateInput = document.getElementById('startDate');
+        const endDateInput = document.getElementById('endDate');
+        
+        let revenueChart, deliverymenChart, shopsChart;
+
+        const filterOrdersByDateRange = () => {
+            const startDate = startDateInput.value ? new Date(startDateInput.value) : null;
+            const endDate = endDateInput.value ? new Date(endDateInput.value) : null;
+            
+            if (!startDate || !endDate) {
+                return [];
+            }
+            
+            return allOrders.filter(order => {
+                const orderDate = new Date(order.date);
+                return orderDate >= startDate && orderDate <= endDate;
+            });
+        };
+
+        const updateDashboard = () => {
+            const filteredOrders = filterOrdersByDateRange();
+
+            if (filteredOrders.length === 0) {
+                // Réinitialiser les cartes et les graphiques
+                document.getElementById('totalOrders').textContent = '0';
+                document.getElementById('deliveredOrders').textContent = '0';
+                document.getElementById('totalRevenue').textContent = '0 XAF';
+                document.getElementById('totalFees').textContent = '0 XAF';
+                updateCharts([], [], [], [], []);
+                return;
+            }
+
+            // Calcul des métriques
+            const deliveredOrders = filteredOrders.filter(order => order.status === 'livrée');
+            const totalOrders = filteredOrders.length;
+            const totalRevenue = deliveredOrders.reduce((sum, order) => sum + order.revenue, 0);
+            const totalFees = deliveredOrders.reduce((sum, order) => sum + order.fees, 0);
+
+            // Mise à jour des cartes
+            document.getElementById('totalOrders').textContent = totalOrders;
+            document.getElementById('deliveredOrders').textContent = deliveredOrders.length;
+            document.getElementById('totalRevenue').textContent = `${totalRevenue.toLocaleString()} XAF`;
+            document.getElementById('totalFees').textContent = `${totalFees.toLocaleString()} XAF`;
+
+            // Préparation des données pour les graphiques
+            const revenueByDate = {};
+            const deliverymenPerformance = {};
+            const shopPerformance = {};
+
+            deliveredOrders.forEach(order => {
+                // Pour le graphique de revenu
+                if (!revenueByDate[order.date]) {
+                    revenueByDate[order.date] = 0;
+                }
+                revenueByDate[order.date] += order.fees;
+
+                // Pour les classements des livreurs
+                if (!deliverymenPerformance[order.deliveryman]) {
+                    deliverymenPerformance[order.deliveryman] = { delivered: 0, fees: 0 };
+                }
+                deliverymenPerformance[order.deliveryman].delivered += 1;
+                deliverymenPerformance[order.deliveryman].fees += order.fees;
+
+                // Pour les classements des marchands
+                if (!shopPerformance[order.shop]) {
+                    shopPerformance[order.shop] = { revenue: 0 };
+                }
+                shopPerformance[order.shop].revenue += order.revenue;
+            });
+
+            // Tri pour les classements
+            const sortedDeliverymen = Object.keys(deliverymenPerformance).sort((a, b) => deliverymenPerformance[b].delivered - deliverymenPerformance[a].delivered).slice(0, 5);
+            const sortedShops = Object.keys(shopPerformance).sort((a, b) => shopPerformance[b].revenue - shopPerformance[a].revenue).slice(0, 5);
+
+            const revenueLabels = Object.keys(revenueByDate).sort();
+            const revenueData = revenueLabels.map(date => revenueByDate[date]);
+            
+            const deliverymenLabels = sortedDeliverymen;
+            const deliverymenData = sortedDeliverymen.map(dm => deliverymenPerformance[dm].delivered);
+
+            const shopLabels = sortedShops;
+            const shopData = sortedShops.map(shop => shopPerformance[shop].revenue);
+            
+            updateCharts(revenueLabels, revenueData, deliverymenLabels, deliverymenData, shopLabels, shopData);
+        };
+        
+        const updateCharts = (revenueLabels, revenueData, deliverymenLabels, deliverymenData, shopLabels, shopData) => {
+            // Destruction des graphiques existants pour éviter les superpositions
+            if (revenueChart) revenueChart.destroy();
+            if (deliverymenChart) deliverymenChart.destroy();
+            if (shopsChart) shopsChart.destroy();
+
+            // Création du graphique de revenus (CA)
+            revenueChart = new Chart(document.getElementById('revenueChart'), {
+                type: 'line',
+                data: {
+                    labels: revenueLabels,
+                    datasets: [{
+                        label: 'Chiffre d\'affaires (XAF)',
+                        data: revenueData,
+                        borderColor: 'rgb(255, 127, 80)',
+                        backgroundColor: 'rgba(255, 127, 80, 0.2)',
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            // Création du graphique des meilleurs livreurs
+            deliverymenChart = new Chart(document.getElementById('deliverymenChart'), {
+                type: 'bar',
+                data: {
+                    labels: deliverymenLabels,
+                    datasets: [{
+                        label: 'Courses livrées',
+                        data: deliverymenData,
+                        backgroundColor: 'rgba(74, 100, 145, 0.8)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            // Création du graphique des meilleurs marchands
+            shopsChart = new Chart(document.getElementById('shopsChart'), {
+                type: 'bar',
+                data: {
+                    labels: shopLabels,
+                    datasets: [{
+                        label: 'Revenu généré (XAF)',
+                        data: shopData,
+                        backgroundColor: 'rgba(44, 62, 80, 0.8)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        };
+
+        // Ajout des écouteurs d'événements pour les champs de date
+        startDateInput.addEventListener('change', updateDashboard);
+        endDateInput.addEventListener('change', updateDashboard);
+
+        // Initialisation de la page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Définir une plage de dates par défaut pour un affichage immédiat
+            const today = new Date();
+            const lastWeek = new Date();
+            lastWeek.setDate(today.getDate() - 7);
+            
+            startDateInput.value = lastWeek.toISOString().split('T')[0];
+            endDateInput.value = today.toISOString().split('T')[0];
+
+            updateDashboard();
+        });
+    </script>
+</body>
+</html>
