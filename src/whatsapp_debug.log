@@ -1,0 +1,2443 @@
+2025-11-08T00:18:19.446Z - -----------------------------------------
+2025-11-08T00:18:19.447Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:18:19.447Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:18:19.448Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:18:19.448Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T00:18:19.448Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: senderKeyDistributionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T00:18:19.452Z - -----------------------------------------
+2025-11-08T00:18:19.452Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:18:19.452Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:18:19.452Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:18:19.452Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3FB33FC932259E83CCE1
+2025-11-08T00:18:36.775Z - -----------------------------------------
+2025-11-08T00:18:36.775Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:18:36.775Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:18:36.775Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:18:36.775Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T00:18:36.775Z - [FLUX] Message texte à traiter de 237693458135: "bonjour l'equipe"
+2025-11-08T00:18:36.793Z - -----------------------------------------
+2025-11-08T00:18:36.793Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:18:36.793Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:18:36.793Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:18:36.793Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3F4B23792356918429A5
+2025-11-08T00:18:36.799Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T00:18:37.923Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T00:18:38.513Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T00:18:41.123Z - -----------------------------------------
+2025-11-08T00:18:41.123Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:18:41.123Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:18:41.124Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:18:41.124Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T00:18:41.658Z - -----------------------------------------
+2025-11-08T00:18:41.658Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:18:41.658Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:18:41.659Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:18:41.659Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:19:28.046Z - -----------------------------------------
+2025-11-08T00:19:28.046Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:19:28.046Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:19:28.047Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:19:28.047Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T00:19:28.047Z - [FLUX] Message texte à traiter de 237693458135: "1 nylon noir chaussure"
+2025-11-08T00:19:28.053Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T00:19:28.068Z - -----------------------------------------
+2025-11-08T00:19:28.068Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:19:28.068Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:19:28.069Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:19:28.069Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3FDE761B82FEC1A3D0F6
+2025-11-08T00:19:31.100Z - -----------------------------------------
+2025-11-08T00:19:31.100Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:19:31.100Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:19:31.100Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:19:31.100Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:19:31.189Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T00:19:31.473Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T00:19:33.668Z - -----------------------------------------
+2025-11-08T00:19:33.668Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:19:33.668Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:19:33.668Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:19:33.669Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T00:19:34.146Z - -----------------------------------------
+2025-11-08T00:19:34.146Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:19:34.146Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:19:34.146Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:19:34.146Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:19:34.381Z - -----------------------------------------
+2025-11-08T00:19:34.381Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:19:34.381Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:19:34.382Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:19:34.382Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:21:14.092Z - -----------------------------------------
+2025-11-08T00:21:14.092Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:21:14.092Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:21:14.092Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:21:14.092Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T00:21:14.092Z - [FLUX] Message texte à traiter de 237693458135: "GENERAL EXPRESS MVAN"
+2025-11-08T00:21:14.096Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T00:21:14.098Z - -----------------------------------------
+2025-11-08T00:21:14.098Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:21:14.099Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:21:14.099Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:21:14.099Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3F92604D3D9E8646B773
+2025-11-08T00:21:16.406Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T00:21:16.713Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T00:21:19.112Z - -----------------------------------------
+2025-11-08T00:21:19.112Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:21:19.112Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:21:19.112Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:21:19.112Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T00:21:19.395Z - -----------------------------------------
+2025-11-08T00:21:19.395Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:21:19.395Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:21:19.395Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:21:19.395Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:22:31.787Z - -----------------------------------------
+2025-11-08T00:22:31.788Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:22:31.788Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:22:31.788Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:22:31.788Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:22:31.906Z - -----------------------------------------
+2025-11-08T00:22:31.906Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:22:31.906Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:22:31.906Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:22:31.906Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:22:32.052Z - -----------------------------------------
+2025-11-08T00:22:32.052Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:22:32.052Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:22:32.052Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:22:32.053Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:30:00.996Z - -----------------------------------------
+2025-11-08T00:30:00.996Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:30:00.996Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:30:00.996Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:30:00.996Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T00:30:00.996Z - [FLUX] Message texte à traiter de 237693458135: "📌 COMMANDE N°1 BOUTIQUE LYXA
+
+- Quantité : 01 moccasins noir pointure 46 , une hermès  blanche pointure 46 , une timberland noir pointure 46 
+
+•.   pointure : 46 
+
+- NB  : HERMÈS ET TIMBERLAND  SONT A RÉCUPÉRER A L'AGENCE GENERAL MVAN
+
+- Numéro de téléphone du client :++237 6 59 13 80 44
+
+- lieu de livraison: COMMISSARIAT COLDONGO VEILLEZ APPELLER LE CLIENT IL VOUS INDIQUE MIEUX 
+-
+- A PAYER : 2000F
+
+- Paiement EN ESPÈCE 2000
+
+ •   Heure:  9h00"
+2025-11-08T00:30:00.999Z - -----------------------------------------
+2025-11-08T00:30:00.999Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:30:00.999Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:30:00.999Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:30:00.999Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3F98DDD46C111F98FEAC
+2025-11-08T00:30:01.002Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T00:30:07.450Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T00:30:07.804Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T00:30:09.800Z - -----------------------------------------
+2025-11-08T00:30:09.800Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:30:09.800Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:30:09.800Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:30:09.800Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T00:30:10.119Z - -----------------------------------------
+2025-11-08T00:30:10.119Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:30:10.119Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:30:10.119Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:30:10.119Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:31:21.455Z - -----------------------------------------
+2025-11-08T00:31:21.455Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:31:21.455Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:31:21.456Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:31:21.456Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T00:36:40.610Z - -----------------------------------------
+2025-11-08T00:36:40.610Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:36:40.610Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:36:40.611Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:36:40.611Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T00:36:40.611Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: editedMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T00:36:40.613Z - -----------------------------------------
+2025-11-08T00:36:40.614Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:36:40.614Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:36:40.614Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:36:40.614Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3FD9FAC58AC4565D88FA
+2025-11-08T00:36:40.643Z - -----------------------------------------
+2025-11-08T00:36:40.644Z - [FLUX] Appel Webhook reçu.
+2025-11-08T00:36:40.644Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T00:36:40.644Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T00:36:40.644Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T02:46:57.864Z - -----------------------------------------
+2025-11-08T02:46:57.891Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:46:57.892Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:46:57.892Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:46:57.893Z - [FLUX] Horodatage validé. Âge: 4s.
+2025-11-08T02:46:57.893Z - [FLUX] Message texte à traiter de 237690159760: "+237696137050
+
+Bjr. J'ai encore commandé 2 boîtes. Pouvez-vous les livrer demain matin ?
+Complex Beac"
+2025-11-08T02:46:57.924Z - -----------------------------------------
+2025-11-08T02:46:57.924Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:46:57.925Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:46:57.925Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:46:57.925Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): AC16B762B797AB328D164E920F4D2A29
+2025-11-08T02:46:57.953Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T02:47:01.197Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T02:47:01.782Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T02:47:03.574Z - -----------------------------------------
+2025-11-08T02:47:03.574Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:47:03.574Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:47:03.574Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:47:03.575Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T02:47:36.026Z - -----------------------------------------
+2025-11-08T02:47:36.026Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:47:36.026Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:47:36.027Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:47:36.027Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): AC16B762B797AB328D164E920F4D2A29
+2025-11-08T02:47:36.038Z - -----------------------------------------
+2025-11-08T02:47:36.039Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:47:36.039Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:47:36.039Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:47:36.039Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): AC16B762B797AB328D164E920F4D2A29
+2025-11-08T02:48:16.557Z - -----------------------------------------
+2025-11-08T02:48:16.558Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:48:16.558Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:48:16.558Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:48:16.558Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): AC16B762B797AB328D164E920F4D2A29
+2025-11-08T02:48:16.571Z - -----------------------------------------
+2025-11-08T02:48:16.572Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:48:16.572Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:48:16.572Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:48:16.572Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): AC16B762B797AB328D164E920F4D2A29
+2025-11-08T02:48:16.861Z - -----------------------------------------
+2025-11-08T02:48:16.861Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:48:16.861Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:48:16.861Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:48:16.862Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T02:48:29.705Z - -----------------------------------------
+2025-11-08T02:48:29.706Z - [FLUX] Appel Webhook reçu.
+2025-11-08T02:48:29.706Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T02:48:29.706Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T02:48:29.706Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T03:35:35.058Z - -----------------------------------------
+2025-11-08T03:35:35.069Z - [FLUX] Appel Webhook reçu.
+2025-11-08T03:35:35.069Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T03:35:35.070Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T03:35:35.070Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T04:15:31.383Z - -----------------------------------------
+2025-11-08T04:15:31.391Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:15:31.391Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:15:31.399Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:15:31.399Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T04:15:31.399Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: messageContextInfo (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T04:15:31.402Z - -----------------------------------------
+2025-11-08T04:15:31.402Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:15:31.402Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:15:31.402Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:15:31.402Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3ADB92340B8336E310F8
+2025-11-08T04:15:33.695Z - -----------------------------------------
+2025-11-08T04:15:33.695Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:15:33.695Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:15:33.696Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:15:33.696Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T04:15:33.696Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T04:15:33.706Z - -----------------------------------------
+2025-11-08T04:15:33.706Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:15:33.706Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:15:33.706Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:15:33.707Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3A2C3E8960EA5166F283
+2025-11-08T04:15:34.351Z - -----------------------------------------
+2025-11-08T04:15:34.351Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:15:34.351Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:15:34.351Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:15:34.351Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T04:15:34.351Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T04:15:34.353Z - -----------------------------------------
+2025-11-08T04:15:34.354Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:15:34.354Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:15:34.354Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:15:34.354Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 3A4AFF71FE247A651998
+2025-11-08T04:40:19.687Z - -----------------------------------------
+2025-11-08T04:40:19.688Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:40:19.688Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:40:19.688Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:40:19.688Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T04:40:19.688Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T04:40:19.736Z - -----------------------------------------
+2025-11-08T04:40:19.737Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:40:19.737Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:40:19.737Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:40:19.737Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A0753B88741E33FF607
+2025-11-08T04:44:02.210Z - -----------------------------------------
+2025-11-08T04:44:02.210Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:02.210Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:02.211Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:02.211Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T04:44:02.211Z - [FLUX] Message texte à traiter de 237674159215: "Frid market 
+
+MBO 637418
+
+Nature: 01 gros nylon noir
+
+General express voyage"
+2025-11-08T04:44:02.257Z - -----------------------------------------
+2025-11-08T04:44:02.257Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:02.257Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:02.258Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:02.258Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A310552C990A2E0500E
+2025-11-08T04:44:02.323Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T04:44:11.347Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T04:44:12.111Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T04:44:14.123Z - -----------------------------------------
+2025-11-08T04:44:14.123Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:14.123Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:14.124Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:14.124Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T04:44:14.845Z - -----------------------------------------
+2025-11-08T04:44:14.845Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:14.845Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:14.845Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:14.845Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T04:44:15.128Z - -----------------------------------------
+2025-11-08T04:44:15.128Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:15.128Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:15.128Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:15.128Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T04:44:15.159Z - -----------------------------------------
+2025-11-08T04:44:15.159Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:15.159Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:15.159Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:15.159Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T04:44:15.159Z - [FLUX] Message texte à traiter de 237674159215: "🙏Merci d'avoir contacté Frid Market votre boutique en ligne !Dites-nous en quoi nous pouvons vous aider.Cliquez sur le lien pour intégrer notre groupe WhatsApp pour ne rien manquer sur notre actualité
+https://chat.whatsapp.com/K5Svcit52GO7o8xWLh1Yf0?mode=ems_copy_c"
+2025-11-08T04:44:15.167Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T04:44:15.169Z - -----------------------------------------
+2025-11-08T04:44:15.169Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:15.169Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:15.169Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:15.169Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AFE6BF553F7A0EFE569
+2025-11-08T04:44:17.495Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T04:44:17.822Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T04:44:18.834Z - -----------------------------------------
+2025-11-08T04:44:18.834Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:18.834Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:18.834Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:18.834Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T04:44:19.617Z - -----------------------------------------
+2025-11-08T04:44:19.617Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:19.617Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:19.617Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:19.618Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T04:44:19.734Z - -----------------------------------------
+2025-11-08T04:44:19.734Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:44:19.734Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:44:19.734Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:44:19.734Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T04:56:22.888Z - -----------------------------------------
+2025-11-08T04:56:22.888Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:56:22.889Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:56:22.889Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:56:22.889Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T04:56:47.306Z - -----------------------------------------
+2025-11-08T04:56:47.306Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:56:47.306Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:56:47.307Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:56:47.307Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T04:56:47.316Z - -----------------------------------------
+2025-11-08T04:56:47.316Z - [FLUX] Appel Webhook reçu.
+2025-11-08T04:56:47.316Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T04:56:47.316Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T04:56:47.316Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:08:15.640Z - -----------------------------------------
+2025-11-08T05:08:15.664Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:08:15.664Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:08:15.665Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:08:15.665Z - [FLUX] Horodatage validé. Âge: 4s.
+2025-11-08T05:08:15.665Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: senderKeyDistributionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:08:15.677Z - -----------------------------------------
+2025-11-08T05:08:15.677Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:08:15.677Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:08:15.677Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:08:15.678Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): AC29C682DAABD449638D9CC879F1680D
+2025-11-08T05:12:01.543Z - -----------------------------------------
+2025-11-08T05:12:01.543Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:01.544Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:01.544Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:01.544Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:12:01.544Z - [FLUX] Message texte à traiter de 237674159215: "Frid Market 
+
+Addresse: Tonga olinguia
+
+Numero : 6 79 57 21 64
+
+👉01 Lait  corporel +
+
+👉2 savons + 
+
+👉une mousse nettoyante + 
+
+👉01 gommage corporel +
+
+👉01 crème faciale + 
+
+👉01 gommage facial , 
+
+👉01 gant de toilette 
+
+✅Prix: 11.000f"
+2025-11-08T05:12:01.551Z - -----------------------------------------
+2025-11-08T05:12:01.552Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:01.552Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:01.552Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:01.552Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AA33214163487CE9746
+2025-11-08T05:12:01.582Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:12:05.971Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:12:06.379Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:12:09.155Z - -----------------------------------------
+2025-11-08T05:12:09.155Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:09.155Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:09.156Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:09.156Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:12:09.740Z - -----------------------------------------
+2025-11-08T05:12:09.740Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:09.740Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:09.741Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:09.741Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:12:10.195Z - -----------------------------------------
+2025-11-08T05:12:10.195Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:10.195Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:10.195Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:10.195Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:12:16.049Z - -----------------------------------------
+2025-11-08T05:12:16.049Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:16.049Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:16.049Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:16.049Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:12:52.299Z - -----------------------------------------
+2025-11-08T05:12:52.299Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:52.299Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:52.300Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:52.300Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:12:52.300Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: messageContextInfo (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:12:52.311Z - -----------------------------------------
+2025-11-08T05:12:52.311Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:52.311Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:52.311Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:52.312Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AB3F30108ABB00BED57
+2025-11-08T05:12:52.336Z - -----------------------------------------
+2025-11-08T05:12:52.336Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:52.336Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:52.336Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:52.337Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:12:54.076Z - -----------------------------------------
+2025-11-08T05:12:54.076Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:54.076Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:54.076Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:54.077Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:12:54.077Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:12:54.079Z - -----------------------------------------
+2025-11-08T05:12:54.079Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:12:54.079Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:12:54.079Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:12:54.079Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5B2AAB66CFD845FC239BE0E5AEDE85F
+2025-11-08T05:13:14.124Z - -----------------------------------------
+2025-11-08T05:13:14.124Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:13:14.124Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:13:14.124Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:13:14.124Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:13:14.124Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: messageContextInfo (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:13:14.126Z - -----------------------------------------
+2025-11-08T05:13:14.127Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:13:14.127Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:13:14.127Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:13:14.127Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AF45EB51C444DDCE8C6
+2025-11-08T05:13:14.132Z - -----------------------------------------
+2025-11-08T05:13:14.132Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:13:14.132Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:13:14.132Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:13:14.132Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:13:40.015Z - -----------------------------------------
+2025-11-08T05:13:40.015Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:13:40.016Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:13:40.017Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:13:40.017Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:13:40.017Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: senderKeyDistributionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:13:40.060Z - -----------------------------------------
+2025-11-08T05:13:40.060Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:13:40.061Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:13:40.061Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:13:40.061Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5E02A0F9828E40B98F7765E009D1ED1
+2025-11-08T05:13:40.329Z - -----------------------------------------
+2025-11-08T05:13:40.329Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:13:40.329Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:13:40.330Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:13:40.330Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:13:40.330Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:13:40.334Z - -----------------------------------------
+2025-11-08T05:13:40.334Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:13:40.334Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:13:40.334Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:13:40.334Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5735B9034FA895853498F4CC07154B1
+2025-11-08T05:15:17.476Z - -----------------------------------------
+2025-11-08T05:15:17.477Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:17.477Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:17.477Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:17.477Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:15:17.477Z - [FLUX] Message texte à traiter de 237692260821: "Retrait 
+
+Galus 
+Chrisline, stanis
+
+Gylfreid 
+Frid, wts 
+
+Ramassage 
+
+Chirac
+Queen
+
+Benten
+Doriane"
+2025-11-08T05:15:17.487Z - -----------------------------------------
+2025-11-08T05:15:17.487Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:17.487Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:17.487Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:17.487Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5066DD476BD8743D7BBDBFCBCA091F2
+2025-11-08T05:15:17.501Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:15:20.451Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:15:20.885Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:15:22.391Z - -----------------------------------------
+2025-11-08T05:15:22.392Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:22.392Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:22.392Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:22.392Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:15:22.933Z - -----------------------------------------
+2025-11-08T05:15:22.934Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:22.934Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:22.934Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:22.934Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:15:23.272Z - -----------------------------------------
+2025-11-08T05:15:23.273Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:23.273Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:23.273Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:23.273Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:15:27.195Z - -----------------------------------------
+2025-11-08T05:15:27.195Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:27.195Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:27.195Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:27.196Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:15:27.196Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:15:27.449Z - -----------------------------------------
+2025-11-08T05:15:27.449Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:27.450Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:27.450Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:27.450Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A53C4E7310FA6FDB4184994B15966F04
+2025-11-08T05:15:27.720Z - -----------------------------------------
+2025-11-08T05:15:27.720Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:27.721Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:27.721Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:27.721Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:15:27.721Z - [FLUX] Message texte à traiter de 237692260821: "Nell"
+2025-11-08T05:15:27.729Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:15:27.735Z - -----------------------------------------
+2025-11-08T05:15:27.735Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:27.735Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:27.736Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:27.736Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5777E52227A3C686D4EDE867D96A393
+2025-11-08T05:15:30.204Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:15:30.396Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:15:31.723Z - -----------------------------------------
+2025-11-08T05:15:31.723Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:31.723Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:31.724Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:31.724Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:15:32.372Z - -----------------------------------------
+2025-11-08T05:15:32.372Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:32.372Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:32.372Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:32.372Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:15:32.713Z - -----------------------------------------
+2025-11-08T05:15:32.713Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:32.713Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:32.713Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:32.713Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:15:39.532Z - -----------------------------------------
+2025-11-08T05:15:39.533Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:39.533Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:39.533Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:39.533Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:15:39.533Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:15:39.547Z - -----------------------------------------
+2025-11-08T05:15:39.547Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:39.547Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:39.548Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:39.548Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A527F6E88FB7B4E905D36EEC53981A3F
+2025-11-08T05:15:39.885Z - -----------------------------------------
+2025-11-08T05:15:39.885Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:39.885Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:39.885Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:39.885Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:15:39.885Z - [FLUX] Message texte à traiter de 237692260821: "Ntel"
+2025-11-08T05:15:39.889Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:15:39.896Z - -----------------------------------------
+2025-11-08T05:15:39.896Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:39.896Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:39.896Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:39.896Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5B735577719FDD6296AF5FC87ABCAA5
+2025-11-08T05:15:41.461Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:15:41.779Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:15:43.410Z - -----------------------------------------
+2025-11-08T05:15:43.410Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:43.410Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:43.410Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:43.410Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:15:43.959Z - -----------------------------------------
+2025-11-08T05:15:43.959Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:43.959Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:43.960Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:43.960Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:15:44.102Z - -----------------------------------------
+2025-11-08T05:15:44.102Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:44.102Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:44.103Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:44.103Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:15:55.519Z - -----------------------------------------
+2025-11-08T05:15:55.520Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:55.520Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:55.520Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:55.520Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:15:55.520Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:15:55.530Z - -----------------------------------------
+2025-11-08T05:15:55.531Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:55.531Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:55.531Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:55.531Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A57B6A48C294D7D63448E6477DFEEFAF
+2025-11-08T05:15:55.855Z - -----------------------------------------
+2025-11-08T05:15:55.855Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:55.855Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:55.855Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:55.855Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:15:55.855Z - [FLUX] Message texte à traiter de 237692260821: "Univer vitalia"
+2025-11-08T05:15:55.860Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:15:55.874Z - -----------------------------------------
+2025-11-08T05:15:55.874Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:15:55.874Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:15:55.874Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:15:55.875Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5A18309B8F8CC97B30569EC4CF15DAC
+2025-11-08T05:16:00.141Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:16:00.283Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:16:01.744Z - -----------------------------------------
+2025-11-08T05:16:01.744Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:01.744Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:01.745Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:01.745Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:16:02.040Z - -----------------------------------------
+2025-11-08T05:16:02.040Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:02.040Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:02.040Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:02.040Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:16:02.290Z - -----------------------------------------
+2025-11-08T05:16:02.290Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:02.290Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:02.291Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:02.291Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:16:15.460Z - -----------------------------------------
+2025-11-08T05:16:15.461Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:15.461Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:15.461Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:15.461Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:16:15.461Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:16:15.463Z - -----------------------------------------
+2025-11-08T05:16:15.463Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:15.464Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:15.464Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:15.464Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5A1559642E6DD54F8115E13F5D00067
+2025-11-08T05:16:15.748Z - -----------------------------------------
+2025-11-08T05:16:15.748Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:15.748Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:15.748Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:15.748Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:16:15.749Z - [FLUX] Message texte à traiter de 237692260821: "Josiane"
+2025-11-08T05:16:15.751Z - -----------------------------------------
+2025-11-08T05:16:15.751Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:15.751Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:15.751Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:15.751Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A55A6813134EB3E1809E1470DB4F1AF1
+2025-11-08T05:16:15.754Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:16:17.357Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:16:17.653Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:16:19.210Z - -----------------------------------------
+2025-11-08T05:16:19.210Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:19.210Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:19.210Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:19.210Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:16:19.636Z - -----------------------------------------
+2025-11-08T05:16:19.636Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:19.636Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:19.636Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:19.636Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:16:19.914Z - -----------------------------------------
+2025-11-08T05:16:19.914Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:16:19.914Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:16:19.915Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:16:19.915Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:17:22.732Z - -----------------------------------------
+2025-11-08T05:17:22.733Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:22.733Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:22.733Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:22.733Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:17:22.733Z - [FLUX] Message texte à traiter de 237692260821: "Frid market 
+
+MBO 637418
+
+Nature: 01 gros nylon noir
+
+General express voyage"
+2025-11-08T05:17:22.735Z - -----------------------------------------
+2025-11-08T05:17:22.735Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:22.735Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:22.736Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:22.736Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A531C5A4BE265CEE220DF0BA067D03AC
+2025-11-08T05:17:22.738Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:17:26.170Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:17:26.325Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:17:28.366Z - -----------------------------------------
+2025-11-08T05:17:28.366Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:28.366Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:28.366Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:28.366Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:17:28.682Z - -----------------------------------------
+2025-11-08T05:17:28.682Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:28.682Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:28.682Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:28.682Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:17:28.978Z - -----------------------------------------
+2025-11-08T05:17:28.978Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:28.979Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:28.979Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:28.979Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:17:45.888Z - -----------------------------------------
+2025-11-08T05:17:45.888Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:45.888Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:45.888Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:45.888Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:17:45.888Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:17:45.890Z - -----------------------------------------
+2025-11-08T05:17:45.890Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:45.890Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:45.890Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:45.890Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5EF64F8778E611CDC781BAD8C51A987
+2025-11-08T05:17:46.209Z - -----------------------------------------
+2025-11-08T05:17:46.209Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:46.209Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:46.210Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:46.210Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:17:46.210Z - [FLUX] Message texte à traiter de 237692260821: "Chrisline"
+2025-11-08T05:17:46.212Z - -----------------------------------------
+2025-11-08T05:17:46.213Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:46.213Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:46.213Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:46.213Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A52345AA5039E9BB2A81BBDCCD24E203
+2025-11-08T05:17:46.223Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:17:47.381Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:17:47.525Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:17:48.571Z - -----------------------------------------
+2025-11-08T05:17:48.571Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:48.571Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:48.571Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:48.571Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:17:49.153Z - -----------------------------------------
+2025-11-08T05:17:49.153Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:49.153Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:49.153Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:49.153Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:17:49.447Z - -----------------------------------------
+2025-11-08T05:17:49.447Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:17:49.447Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:17:49.447Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:17:49.447Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:18:21.303Z - -----------------------------------------
+2025-11-08T05:18:21.303Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:21.303Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:21.303Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:21.304Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:18:21.304Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:18:21.308Z - -----------------------------------------
+2025-11-08T05:18:21.308Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:21.308Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:21.309Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:21.309Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5BE81AC97DE1B991FB43C2F95583901
+2025-11-08T05:18:21.645Z - -----------------------------------------
+2025-11-08T05:18:21.646Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:21.646Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:21.646Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:21.646Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:18:21.646Z - [FLUX] Message texte à traiter de 237692260821: "O store"
+2025-11-08T05:18:21.649Z - -----------------------------------------
+2025-11-08T05:18:21.649Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:21.649Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:21.649Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:21.649Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A55E2C77257A39AE5B8C2B00564CCD31
+2025-11-08T05:18:21.654Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:18:24.861Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:18:25.230Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:18:26.948Z - -----------------------------------------
+2025-11-08T05:18:26.948Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:26.948Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:26.948Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:26.948Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:18:27.392Z - -----------------------------------------
+2025-11-08T05:18:27.392Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:27.393Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:27.393Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:27.393Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:18:27.660Z - -----------------------------------------
+2025-11-08T05:18:27.660Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:27.660Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:27.660Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:27.660Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:18:58.762Z - -----------------------------------------
+2025-11-08T05:18:58.763Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:58.763Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:58.763Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:58.764Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:18:58.764Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:18:58.774Z - -----------------------------------------
+2025-11-08T05:18:58.774Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:58.774Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:58.774Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:58.775Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5D31F59F4B9671E63BA562F0EB2DBC8
+2025-11-08T05:18:59.093Z - -----------------------------------------
+2025-11-08T05:18:59.093Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:59.093Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:59.093Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:59.094Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:18:59.094Z - [FLUX] Message texte à traiter de 237692260821: "Ma boutique"
+2025-11-08T05:18:59.099Z - -----------------------------------------
+2025-11-08T05:18:59.099Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:18:59.100Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:18:59.100Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:18:59.100Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A58D3FB0440D3613FFA64655C3915B2B
+2025-11-08T05:18:59.102Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:19:01.629Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:19:02.112Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:19:03.807Z - -----------------------------------------
+2025-11-08T05:19:03.807Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:19:03.807Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:19:03.808Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:19:03.808Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:19:04.077Z - -----------------------------------------
+2025-11-08T05:19:04.077Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:19:04.077Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:19:04.077Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:19:04.077Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:19:04.511Z - -----------------------------------------
+2025-11-08T05:19:04.511Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:19:04.511Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:19:04.511Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:19:04.511Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:19:16.229Z - -----------------------------------------
+2025-11-08T05:19:16.229Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:19:16.229Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:19:16.230Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:19:16.230Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:19:16.230Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:19:16.317Z - -----------------------------------------
+2025-11-08T05:19:16.317Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:19:16.317Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:19:16.317Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:19:16.318Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A50528B99A6EC6CAD3E06A005CD2C8D0
+2025-11-08T05:19:19.351Z - -----------------------------------------
+2025-11-08T05:19:19.352Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:19:19.352Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:19:19.352Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:19:19.352Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:19:19.352Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:19:19.367Z - -----------------------------------------
+2025-11-08T05:19:19.367Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:19:19.367Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:19:19.367Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:19:19.367Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5FB79A8C90B9C47DE238B946AE13DE1
+2025-11-08T05:20:15.289Z - -----------------------------------------
+2025-11-08T05:20:15.290Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.290Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.290Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.290Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.293Z - -----------------------------------------
+2025-11-08T05:20:15.293Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.293Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.293Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.293Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.300Z - -----------------------------------------
+2025-11-08T05:20:15.300Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.300Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.300Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.301Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.320Z - -----------------------------------------
+2025-11-08T05:20:15.320Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.320Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.321Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.321Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.323Z - -----------------------------------------
+2025-11-08T05:20:15.324Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.324Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.324Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.324Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.337Z - -----------------------------------------
+2025-11-08T05:20:15.337Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.337Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.337Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.338Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.343Z - -----------------------------------------
+2025-11-08T05:20:15.344Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.344Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.344Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.344Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.350Z - -----------------------------------------
+2025-11-08T05:20:15.351Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.351Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.351Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.351Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:20:15.386Z - -----------------------------------------
+2025-11-08T05:20:15.386Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:20:15.386Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:20:15.386Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:20:15.386Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:21:44.857Z - -----------------------------------------
+2025-11-08T05:21:44.857Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:21:44.857Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:21:44.857Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:21:44.857Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:21:44.857Z - [FLUX] Message texte à traiter de 237692260821: "."
+2025-11-08T05:21:44.860Z - -----------------------------------------
+2025-11-08T05:21:44.860Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:21:44.860Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:21:44.860Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:21:44.860Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A55756A0E353DD6ACF4D7067AE2FFDF3
+2025-11-08T05:21:44.864Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:21:46.209Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:21:46.516Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:21:48.157Z - -----------------------------------------
+2025-11-08T05:21:48.157Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:21:48.157Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:21:48.157Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:21:48.157Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:21:48.442Z - -----------------------------------------
+2025-11-08T05:21:48.442Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:21:48.442Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:21:48.442Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:21:48.442Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:21:49.170Z - -----------------------------------------
+2025-11-08T05:21:49.170Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:21:49.171Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:21:49.171Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:21:49.171Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:21:50.273Z - -----------------------------------------
+2025-11-08T05:21:50.274Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:21:50.274Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:21:50.274Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:21:50.274Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:22:09.482Z - -----------------------------------------
+2025-11-08T05:22:09.482Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:22:09.483Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:22:09.483Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:22:09.483Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:22:09.483Z - [FLUX] Message texte à traiter de 237692260821: "."
+2025-11-08T05:22:09.487Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:22:09.489Z - -----------------------------------------
+2025-11-08T05:22:09.490Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:22:09.490Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:22:09.490Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:22:09.490Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A53F0424634EB28CBB7C1EAA901EB2ED
+2025-11-08T05:22:10.628Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:22:10.928Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:22:13.040Z - -----------------------------------------
+2025-11-08T05:22:13.040Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:22:13.040Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:22:13.040Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:22:13.041Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:22:13.638Z - -----------------------------------------
+2025-11-08T05:22:13.638Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:22:13.638Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:22:13.638Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:22:13.638Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:22:13.950Z - -----------------------------------------
+2025-11-08T05:22:13.950Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:22:13.950Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:22:13.950Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:22:13.950Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:22:17.044Z - -----------------------------------------
+2025-11-08T05:22:17.044Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:22:17.044Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:22:17.044Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:22:17.044Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:23:10.924Z - -----------------------------------------
+2025-11-08T05:23:10.924Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:10.924Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:10.924Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:10.925Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:23:10.925Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:23:10.928Z - -----------------------------------------
+2025-11-08T05:23:10.928Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:10.928Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:10.928Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:10.929Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5D5D33A6044F906BF8E5B394AC1ABA2
+2025-11-08T05:23:12.352Z - -----------------------------------------
+2025-11-08T05:23:12.352Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:12.352Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:12.352Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:12.352Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:23:12.352Z - [FLUX] Message texte à traiter de 237692260821: "Bonjour"
+2025-11-08T05:23:12.355Z - -----------------------------------------
+2025-11-08T05:23:12.355Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:12.355Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:12.355Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:12.355Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5B6B20B94FFF61E316495D7BA668662
+2025-11-08T05:23:12.358Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:23:13.438Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:23:13.582Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:23:15.360Z - -----------------------------------------
+2025-11-08T05:23:15.361Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:15.361Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:15.361Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:15.361Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:23:15.792Z - -----------------------------------------
+2025-11-08T05:23:15.792Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:15.793Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:15.793Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:15.793Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:23:16.293Z - -----------------------------------------
+2025-11-08T05:23:16.294Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:16.294Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:16.294Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:16.294Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:23:38.773Z - -----------------------------------------
+2025-11-08T05:23:38.773Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:38.773Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:38.774Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:38.774Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:23:38.774Z - [FLUX] Message texte à traiter de 237692260821: "J’ai expédier les produits ce matin 
+15 boîte de créatine Monohydrate 
+15 boîte de glutathione 
+12 boîte de collagène marin"
+2025-11-08T05:23:38.777Z - -----------------------------------------
+2025-11-08T05:23:38.777Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:38.778Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:38.778Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:38.778Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5BD188538CF69D6A50F63F10730770B
+2025-11-08T05:23:38.781Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:23:43.108Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:23:43.262Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:23:44.716Z - -----------------------------------------
+2025-11-08T05:23:44.717Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:44.717Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:44.717Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:44.717Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:23:45.028Z - -----------------------------------------
+2025-11-08T05:23:45.028Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:45.028Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:45.028Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:45.028Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:23:47.351Z - -----------------------------------------
+2025-11-08T05:23:47.352Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:47.352Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:47.352Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:47.352Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:23:48.595Z - -----------------------------------------
+2025-11-08T05:23:48.596Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:23:48.596Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:23:48.596Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:23:48.596Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:24:01.382Z - -----------------------------------------
+2025-11-08T05:24:01.382Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:01.382Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:01.382Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:01.382Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:24:01.382Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:24:01.390Z - -----------------------------------------
+2025-11-08T05:24:01.390Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:01.390Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:01.390Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:01.390Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5EA1242EA514F420BCF5AC37658691F
+2025-11-08T05:24:01.709Z - -----------------------------------------
+2025-11-08T05:24:01.710Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:01.710Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:01.710Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:01.710Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:24:01.710Z - [FLUX] Message texte à traiter de 237692260821: "Gold store"
+2025-11-08T05:24:01.714Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:24:01.717Z - -----------------------------------------
+2025-11-08T05:24:01.717Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:01.717Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:01.717Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:01.717Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A544248459BB52F1696E11B733238CEE
+2025-11-08T05:24:05.165Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:24:05.471Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:24:07.664Z - -----------------------------------------
+2025-11-08T05:24:07.665Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:07.665Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:07.665Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:07.665Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:24:07.929Z - -----------------------------------------
+2025-11-08T05:24:07.929Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:07.929Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:07.929Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:07.929Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:24:08.358Z - -----------------------------------------
+2025-11-08T05:24:08.358Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:08.358Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:08.358Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:08.358Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:24:28.186Z - -----------------------------------------
+2025-11-08T05:24:28.186Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:28.186Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:28.186Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:28.186Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:24:28.186Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: imageMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:24:28.230Z - -----------------------------------------
+2025-11-08T05:24:28.231Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:28.231Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:28.231Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:28.231Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A58001FF2710F7B387B466AB2CE48AC1
+2025-11-08T05:24:28.495Z - -----------------------------------------
+2025-11-08T05:24:28.495Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:28.495Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:28.495Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:28.495Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:24:28.495Z - [FLUX] Message texte à traiter de 237692260821: "Lyxa"
+2025-11-08T05:24:28.501Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:24:28.504Z - -----------------------------------------
+2025-11-08T05:24:28.505Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:28.505Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:28.505Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:28.505Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5D779D863675170EF93D93ADAF69DD5
+2025-11-08T05:24:30.572Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:24:30.878Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:24:32.155Z - -----------------------------------------
+2025-11-08T05:24:32.155Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:32.155Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:32.155Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:32.155Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:24:32.679Z - -----------------------------------------
+2025-11-08T05:24:32.679Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:32.679Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:32.679Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:32.679Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:24:33.228Z - -----------------------------------------
+2025-11-08T05:24:33.228Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:33.228Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:33.228Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:33.228Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:24:33.757Z - -----------------------------------------
+2025-11-08T05:24:33.757Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:33.757Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:33.757Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:33.757Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:24:33.757Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T05:24:33.946Z - -----------------------------------------
+2025-11-08T05:24:33.946Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:24:33.946Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:24:33.946Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:24:33.946Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A59ACD55E88E43B33B142D71CAE61C86
+2025-11-08T05:25:09.943Z - -----------------------------------------
+2025-11-08T05:25:09.943Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:09.943Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:09.943Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:09.944Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:25:09.944Z - [FLUX] Message texte à traiter de 237674159215: "Frid market
+
+Numero: 6 78 43 19 67
+
+Adresse: manguier
+
+Nature: 👉01 paquet contenant 03 tableaux 
+
+👉01 série de 05 boîtes à épice 
+
+Total: 15.500f"
+2025-11-08T05:25:09.949Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:25:09.999Z - -----------------------------------------
+2025-11-08T05:25:09.999Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:09.999Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:10.000Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:10.000Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A347BA7B7FD10B526D9
+2025-11-08T05:25:14.954Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:25:15.075Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:25:16.863Z - -----------------------------------------
+2025-11-08T05:25:16.863Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:16.864Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:16.864Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:16.864Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:25:17.488Z - -----------------------------------------
+2025-11-08T05:25:17.488Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:17.488Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:17.488Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:17.489Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:25:19.944Z - -----------------------------------------
+2025-11-08T05:25:19.945Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:19.945Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:19.945Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:19.945Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:25:30.475Z - -----------------------------------------
+2025-11-08T05:25:30.475Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:30.475Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:30.475Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:30.475Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:25:30.477Z - -----------------------------------------
+2025-11-08T05:25:30.477Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:30.477Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:30.477Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:30.478Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:25:30.495Z - -----------------------------------------
+2025-11-08T05:25:30.495Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:30.495Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:30.495Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:30.495Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:25:30.497Z - -----------------------------------------
+2025-11-08T05:25:30.497Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:25:30.497Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:25:30.497Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:25:30.497Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:26:33.878Z - -----------------------------------------
+2025-11-08T05:26:33.878Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:26:33.878Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:26:33.879Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:26:33.879Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:26:33.879Z - [FLUX] Message texte à traiter de 237692260821: "."
+2025-11-08T05:26:33.883Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:26:33.885Z - -----------------------------------------
+2025-11-08T05:26:33.885Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:26:33.885Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:26:33.885Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:26:33.885Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5B693E83679B00E72E248433583D64C
+2025-11-08T05:26:35.142Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:26:35.268Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:26:35.801Z - -----------------------------------------
+2025-11-08T05:26:35.802Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:26:35.802Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:26:35.802Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:26:35.802Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:26:36.961Z - -----------------------------------------
+2025-11-08T05:26:36.961Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:26:36.961Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:26:36.961Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:26:36.961Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:26:37.354Z - -----------------------------------------
+2025-11-08T05:26:37.354Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:26:37.354Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:26:37.354Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:26:37.355Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:26:37.553Z - -----------------------------------------
+2025-11-08T05:26:37.553Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:26:37.553Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:26:37.553Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:26:37.553Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:26:39.788Z - -----------------------------------------
+2025-11-08T05:26:39.789Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:26:39.789Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:26:39.789Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:26:39.789Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:30:06.347Z - -----------------------------------------
+2025-11-08T05:30:06.347Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:30:06.347Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:30:06.348Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:30:06.348Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:30:06.348Z - [FLUX] Message texte à traiter de 237674159215: "Frid market 
+
+Numero: 656557520
+
+Adresse: nkomkana
+
+Nature: 01 nylon contenant produits Cosmétiques( le nylon ce trouve dans le paquet que vous allez retiré a l’agence ce matin)
+
+Total : RAS"
+2025-11-08T05:30:06.355Z - -----------------------------------------
+2025-11-08T05:30:06.355Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:30:06.355Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:30:06.355Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:30:06.356Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A61329DDEB4D361740A
+2025-11-08T05:30:06.357Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:30:10.111Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:30:10.424Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:30:12.766Z - -----------------------------------------
+2025-11-08T05:30:12.766Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:30:12.766Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:30:12.766Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:30:12.766Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:30:13.365Z - -----------------------------------------
+2025-11-08T05:30:13.365Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:30:13.365Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:30:13.366Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:30:13.366Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:30:13.523Z - -----------------------------------------
+2025-11-08T05:30:13.523Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:30:13.523Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:30:13.523Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:30:13.523Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:30:15.777Z - -----------------------------------------
+2025-11-08T05:30:15.777Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:30:15.777Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:30:15.777Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:30:15.777Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:31:37.527Z - -----------------------------------------
+2025-11-08T05:31:37.527Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:31:37.527Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:31:37.528Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:31:37.528Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:31:37.528Z - [FLUX] Message texte à traiter de 237674159215: "Frid market 
+
+Numero: 656902973
+
+Adresse: ngousso 
+
+Nature: 01 nylon contenant vêtements ( le nylon ce trouve dans le paquet que vous allez retiré a l’agence ce matin)
+
+Total : RAS"
+2025-11-08T05:31:37.530Z - -----------------------------------------
+2025-11-08T05:31:37.531Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:31:37.531Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:31:37.531Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:31:37.531Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A8234E57D25BDFA4141
+2025-11-08T05:31:37.533Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:31:40.701Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:31:41.000Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:31:42.865Z - -----------------------------------------
+2025-11-08T05:31:42.865Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:31:42.865Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:31:42.865Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:31:42.865Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:31:42.968Z - -----------------------------------------
+2025-11-08T05:31:42.968Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:31:42.968Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:31:42.969Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:31:42.969Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:31:43.411Z - -----------------------------------------
+2025-11-08T05:31:43.411Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:31:43.411Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:31:43.411Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:31:43.411Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:35:38.250Z - -----------------------------------------
+2025-11-08T05:35:38.251Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:35:38.251Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:35:38.251Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:35:38.251Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:35:38.251Z - [FLUX] Message texte à traiter de 237657152185: "Bonjour chers collègues wink-express j’espère vous allez bien se matin"
+2025-11-08T05:35:38.253Z - -----------------------------------------
+2025-11-08T05:35:38.253Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:35:38.253Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:35:38.253Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:35:38.253Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AF1F3DD8F09A54B908D
+2025-11-08T05:35:38.255Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:35:39.711Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:35:40.071Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:35:42.303Z - -----------------------------------------
+2025-11-08T05:35:42.303Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:35:42.303Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:35:42.303Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:35:42.303Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:35:42.940Z - -----------------------------------------
+2025-11-08T05:35:42.940Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:35:42.940Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:35:42.941Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:35:42.941Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:35:48.423Z - -----------------------------------------
+2025-11-08T05:35:48.424Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:35:48.424Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:35:48.424Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:35:48.424Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:36:04.699Z - -----------------------------------------
+2025-11-08T05:36:04.699Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:36:04.699Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:36:04.699Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:36:04.699Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:36:04.699Z - [FLUX] Message texte à traiter de 237657152185: "J’aimerais valider cette commande au plus vite ce matin"
+2025-11-08T05:36:04.710Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:36:04.727Z - -----------------------------------------
+2025-11-08T05:36:04.727Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:36:04.727Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:36:04.727Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:36:04.727Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A250ACA6ED188A8B7D5
+2025-11-08T05:36:06.230Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:36:06.373Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:36:07.379Z - -----------------------------------------
+2025-11-08T05:36:07.379Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:36:07.379Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:36:07.379Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:36:07.379Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:36:08.389Z - -----------------------------------------
+2025-11-08T05:36:08.389Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:36:08.389Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:36:08.389Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:36:08.389Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:36:08.395Z - -----------------------------------------
+2025-11-08T05:36:08.395Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:36:08.395Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:36:08.395Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:36:08.395Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:47:45.597Z - -----------------------------------------
+2025-11-08T05:47:45.598Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:47:45.598Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:47:45.598Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:47:45.598Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:47:45.598Z - [FLUX] Message texte à traiter de 237671325511: "Bonjour"
+2025-11-08T05:47:45.602Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:47:45.606Z - -----------------------------------------
+2025-11-08T05:47:45.606Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:47:45.607Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:47:45.607Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:47:45.607Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A599554AEA48940A8E625D4EED4E6317
+2025-11-08T05:47:46.639Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:47:47.048Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:47:48.941Z - -----------------------------------------
+2025-11-08T05:47:48.941Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:47:48.941Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:47:48.942Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:47:48.942Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:47:49.453Z - -----------------------------------------
+2025-11-08T05:47:49.453Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:47:49.453Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:47:49.453Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:47:49.453Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:47:49.466Z - -----------------------------------------
+2025-11-08T05:47:49.466Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:47:49.466Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:47:49.467Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:47:49.467Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:49:21.802Z - -----------------------------------------
+2025-11-08T05:49:21.802Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:49:21.802Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:49:21.803Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:49:21.803Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:49:21.803Z - [FLUX] Message texte à traiter de 237679973562: "Bonjour"
+2025-11-08T05:49:21.816Z - -----------------------------------------
+2025-11-08T05:49:21.816Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:49:21.816Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:49:21.817Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:49:21.817Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AA79CA6E11C60A7ECB1
+2025-11-08T05:49:21.818Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:49:22.916Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:49:23.443Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:49:25.050Z - -----------------------------------------
+2025-11-08T05:49:25.050Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:49:25.050Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:49:25.050Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:49:25.050Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:49:25.549Z - -----------------------------------------
+2025-11-08T05:49:25.549Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:49:25.549Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:49:25.549Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:49:25.549Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:49:25.902Z - -----------------------------------------
+2025-11-08T05:49:25.902Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:49:25.902Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:49:25.902Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:49:25.902Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:49:28.003Z - -----------------------------------------
+2025-11-08T05:49:28.004Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:49:28.004Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:49:28.004Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:49:28.004Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:51:23.778Z - -----------------------------------------
+2025-11-08T05:51:23.778Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:23.778Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:23.778Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:23.778Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:51:23.779Z - [FLUX] Message texte à traiter de 237671325511: "Groupe Danister 
+Adresse : ngousso fourgerolle
+Numéro client: 6 95 22 95 37
+Quantité 1 organic ear oil 
+Prix 9900f 
+Heure 10h"
+2025-11-08T05:51:23.786Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:51:23.787Z - -----------------------------------------
+2025-11-08T05:51:23.787Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:23.787Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:23.788Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:23.788Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A526D56ADFB423DE89679813EFE396A9
+2025-11-08T05:51:27.289Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:51:27.596Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:51:29.489Z - -----------------------------------------
+2025-11-08T05:51:29.489Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:29.490Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:29.490Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:29.490Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:51:29.757Z - -----------------------------------------
+2025-11-08T05:51:29.757Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:29.757Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:29.758Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:29.758Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:51:30.885Z - -----------------------------------------
+2025-11-08T05:51:30.885Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:30.885Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:30.885Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:30.886Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:51:40.807Z - -----------------------------------------
+2025-11-08T05:51:40.808Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:40.808Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:40.808Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:40.808Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:51:40.809Z - [FLUX] Message texte à traiter de 237679973562: "*WTS Business* 
+NUMERO: ‪6 92 50 52 88‬
+ADRESSE : prestige hôtel 
+NATURE :   Tondeuse 3EN1
+NET A PERCEVOIR :8500f"
+2025-11-08T05:51:40.815Z - -----------------------------------------
+2025-11-08T05:51:40.815Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:40.815Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:40.815Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:40.816Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AFDEEDF73890CFBC5F5
+2025-11-08T05:51:40.817Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:51:43.964Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:51:44.263Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:51:46.009Z - -----------------------------------------
+2025-11-08T05:51:46.009Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:46.009Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:46.010Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:46.010Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:51:46.443Z - -----------------------------------------
+2025-11-08T05:51:46.443Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:46.443Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:46.444Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:46.444Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:51:55.555Z - -----------------------------------------
+2025-11-08T05:51:55.555Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:51:55.555Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:51:55.556Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:51:55.556Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:55:11.383Z - -----------------------------------------
+2025-11-08T05:55:11.384Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:55:11.384Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:55:11.384Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:55:11.384Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T05:55:11.384Z - [FLUX] Message texte à traiter de 237679973562: "*WTS Business* 
+NUMERO: 656094323
+ADRESSE : svp appeler il donne ça position 
+NATURE :   Tondeuse 3EN1
+NET A PERCEVOIR :8500f"
+2025-11-08T05:55:11.394Z - -----------------------------------------
+2025-11-08T05:55:11.394Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:55:11.394Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:55:11.395Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:55:11.395Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A0C38F6312C6F1A5F6E
+2025-11-08T05:55:11.396Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:55:14.049Z - -----------------------------------------
+2025-11-08T05:55:14.049Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:55:14.050Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:55:14.050Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:55:14.050Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:55:14.834Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:55:15.136Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:55:17.345Z - -----------------------------------------
+2025-11-08T05:55:17.346Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:55:17.346Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:55:17.346Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:55:17.346Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:55:17.732Z - -----------------------------------------
+2025-11-08T05:55:17.733Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:55:17.733Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:55:17.733Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:55:17.733Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:55:17.919Z - -----------------------------------------
+2025-11-08T05:55:17.919Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:55:17.919Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:55:17.919Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:55:17.919Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:56:02.902Z - -----------------------------------------
+2025-11-08T05:56:02.902Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:56:02.902Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:56:02.903Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:56:02.903Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:58:17.820Z - -----------------------------------------
+2025-11-08T05:58:17.820Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:58:17.820Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:58:17.820Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:58:17.820Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T05:58:17.821Z - [FLUX] Message texte à traiter de 237679973562: "*WTS Business* 
+NUMERO: ‪6 95 31 24 32‬
+ADRESSE : Nkozoa 
+NATURE :   Tondeuse 3EN1
+NET A PERCEVOIR :8500f
+En soirée"
+2025-11-08T05:58:17.824Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T05:58:17.829Z - -----------------------------------------
+2025-11-08T05:58:17.830Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:58:17.830Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:58:17.830Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:58:17.830Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AB6AFDF8EC0866CE54F
+2025-11-08T05:58:20.958Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T05:58:21.268Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T05:58:22.617Z - -----------------------------------------
+2025-11-08T05:58:22.617Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:58:22.617Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:58:22.617Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:58:22.618Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T05:58:23.347Z - -----------------------------------------
+2025-11-08T05:58:23.348Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:58:23.348Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:58:23.348Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:58:23.348Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:58:26.735Z - -----------------------------------------
+2025-11-08T05:58:26.735Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:58:26.735Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:58:26.735Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:58:26.735Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:58:45.159Z - -----------------------------------------
+2025-11-08T05:58:45.159Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:58:45.159Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:58:45.160Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:58:45.160Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T05:58:45.161Z - -----------------------------------------
+2025-11-08T05:58:45.162Z - [FLUX] Appel Webhook reçu.
+2025-11-08T05:58:45.162Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T05:58:45.162Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T05:58:45.162Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:00:21.631Z - -----------------------------------------
+2025-11-08T06:00:21.632Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:21.632Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:21.632Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:21.632Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:00:21.633Z - [FLUX] Message texte à traiter de 237620276462: "Quëën institut 
+Numero : 657032261
+Quartier   : liberté Mimboman net à la poubelle 
+Heure : 8h
+Produits: chantilly 
+Net à percevoir : 0f"
+2025-11-08T06:00:21.638Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:00:21.687Z - -----------------------------------------
+2025-11-08T06:00:21.688Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:21.688Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:21.688Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:21.688Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A3A1B1B966A188A5B1E
+2025-11-08T06:00:27.781Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:00:28.122Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:00:30.218Z - -----------------------------------------
+2025-11-08T06:00:30.218Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:30.218Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:30.218Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:30.218Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:00:30.524Z - -----------------------------------------
+2025-11-08T06:00:30.525Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:30.525Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:30.525Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:30.525Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:00:30.897Z - -----------------------------------------
+2025-11-08T06:00:30.897Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:30.898Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:30.898Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:30.898Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:00:39.674Z - -----------------------------------------
+2025-11-08T06:00:39.674Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:39.674Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:39.674Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:39.674Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:00:39.674Z - [FLUX] Message texte à traiter de 237671325511: "Groupe Danister 
+Adresse : mvan
+Numéro client: 6 83 68 03 64 
+Quantité 1 rhinitis spray 
+Prix 10000f 
+Heure elle dit elle rentre au village essé à 9h elle souhaite être livré le plutôt que possible"
+2025-11-08T06:00:39.677Z - -----------------------------------------
+2025-11-08T06:00:39.678Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:39.678Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:39.678Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:39.678Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5FAF12CA651D51B288960C4F478F9CF
+2025-11-08T06:00:39.686Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:00:41.748Z - -----------------------------------------
+2025-11-08T06:00:41.749Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:41.749Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:41.749Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:41.749Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:00:41.749Z - [FLUX] Message texte à traiter de 237620276462: "Svp commencez par cette dame elle voyage à 12 h"
+2025-11-08T06:00:41.755Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:00:41.756Z - -----------------------------------------
+2025-11-08T06:00:41.756Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:41.756Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:41.757Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:41.757Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2ACE849A2705EF9D930B
+2025-11-08T06:00:43.239Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:00:43.458Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:00:43.550Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:00:43.590Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:00:43.700Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:00:44.491Z - -----------------------------------------
+2025-11-08T06:00:44.492Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:44.492Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:44.492Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:44.492Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:00:44.492Z - [FLUX] Message texte à traiter de 237679973562: "*WTS Business* 
+NUMERO: ‪6 56 09 43 23‬
+ADRESSE : svp appelez il donne ça position 
+NATURE :   Tondeuse 3EN1
+NET A PERCEVOIR :8500f"
+2025-11-08T06:00:44.517Z - -----------------------------------------
+2025-11-08T06:00:44.518Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:44.518Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:44.518Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:44.518Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2A829DAC0A311CCAE9BA
+2025-11-08T06:00:44.519Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:00:45.067Z - -----------------------------------------
+2025-11-08T06:00:45.067Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:45.067Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:45.068Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:45.068Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:00:45.424Z - -----------------------------------------
+2025-11-08T06:00:45.424Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:45.424Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:45.424Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:45.425Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:00:45.450Z - -----------------------------------------
+2025-11-08T06:00:45.451Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:45.451Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:45.452Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:45.452Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:00:48.750Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:00:49.047Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:00:51.267Z - -----------------------------------------
+2025-11-08T06:00:51.267Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:51.267Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:51.267Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:51.268Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:00:51.603Z - -----------------------------------------
+2025-11-08T06:00:51.604Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:51.604Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:51.604Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:51.604Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:00:51.878Z - -----------------------------------------
+2025-11-08T06:00:51.878Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:00:51.879Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:00:51.879Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:00:51.879Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:07:06.773Z - -----------------------------------------
+2025-11-08T06:07:06.773Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:06.773Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:06.773Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:06.773Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:07:06.773Z - [FLUX] Message texte à traiter de 237620276462: "Numéro :696358375
+Quartier :odza(happy)
+Heure :10h
+Produit : 1 petit pot de savon noire 
+Net à percevoir :8500f"
+2025-11-08T06:07:06.775Z - -----------------------------------------
+2025-11-08T06:07:06.776Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:06.776Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:06.776Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:06.776Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): 2AD6E74A23AE58D9B1AB
+2025-11-08T06:07:06.777Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:07:11.123Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:07:11.251Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:07:13.045Z - -----------------------------------------
+2025-11-08T06:07:13.045Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:13.045Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:13.045Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:13.045Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:07:13.342Z - -----------------------------------------
+2025-11-08T06:07:13.342Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:13.342Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:13.342Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:13.342Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:07:13.835Z - -----------------------------------------
+2025-11-08T06:07:13.835Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:13.835Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:13.835Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:13.835Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:07:42.765Z - -----------------------------------------
+2025-11-08T06:07:42.766Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:42.766Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:42.766Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:42.766Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:07:42.766Z - [FLUX] Message texte à traiter de 237692260821: "Bonjour Chère Partenaire 🤝"
+2025-11-08T06:07:42.769Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:07:42.772Z - -----------------------------------------
+2025-11-08T06:07:42.772Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:42.772Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:42.772Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:42.772Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A51A024DFF4270CC8F1C7A1E2D0726D3
+2025-11-08T06:07:44.240Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:07:44.539Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:07:45.911Z - -----------------------------------------
+2025-11-08T06:07:45.911Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:45.911Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:45.911Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:45.911Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:07:46.461Z - -----------------------------------------
+2025-11-08T06:07:46.461Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:46.461Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:46.461Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:46.461Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:07:52.870Z - -----------------------------------------
+2025-11-08T06:07:52.871Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:52.871Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:52.871Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:52.871Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:07:52.871Z - [FLUX] Message texte à traiter de 237692260821: "C'est déjà chez nous ??"
+2025-11-08T06:07:52.874Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:07:52.881Z - -----------------------------------------
+2025-11-08T06:07:52.881Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:52.881Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:52.882Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:52.882Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A588A9AAEE23FFAB77643DB4FF2CF88F
+2025-11-08T06:07:54.559Z - -----------------------------------------
+2025-11-08T06:07:54.560Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:54.560Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:54.560Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:54.560Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:07:55.121Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:07:55.248Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:07:57.087Z - -----------------------------------------
+2025-11-08T06:07:57.087Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:57.087Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:57.087Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:57.088Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:07:57.581Z - -----------------------------------------
+2025-11-08T06:07:57.581Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:07:57.581Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:07:57.582Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:07:57.582Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:08:03.289Z - -----------------------------------------
+2025-11-08T06:08:03.289Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:08:03.290Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:08:03.290Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:08:03.290Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:08:03.300Z - -----------------------------------------
+2025-11-08T06:08:03.300Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:08:03.300Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:08:03.300Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:08:03.300Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:21.115Z - -----------------------------------------
+2025-11-08T06:12:21.115Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:21.115Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:21.115Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:21.115Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:21.116Z - [FLUX] Message texte à traiter de 237692260821: "Vitalis 
+Numéro : ‪‪‪‪‬ ‪‪‪‪‪‪‪‪‪‪‪‪+237691004124
+Adresse ; il dira 
+Nature ; 2 spray pour fumeurs 
+Montant ;10000"
+2025-11-08T06:12:21.120Z - -----------------------------------------
+2025-11-08T06:12:21.120Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:21.121Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:21.121Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:21.121Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A571A67B4089BD427484C38A8C2A6D43
+2025-11-08T06:12:21.122Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:21.302Z - -----------------------------------------
+2025-11-08T06:12:21.302Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:21.303Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:21.303Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:21.303Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:21.303Z - [FLUX] Message texte à traiter de 237692260821: "*NTEL ONLINE SHOP*
+NUMERO: +237 6 54 79 28 08
+
+ADRESSE : total nkomo
+
+NATURE :   2 supports+ 1 micro cravate 
+
+NET A PERCEVOIR : 23.000f
+  Souhaite être livré maintenant svp"
+2025-11-08T06:12:21.310Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:21.318Z - -----------------------------------------
+2025-11-08T06:12:21.318Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:21.318Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:21.319Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:21.319Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5D475E9ACC50BD735F979E6339F7939
+2025-11-08T06:12:22.956Z - -----------------------------------------
+2025-11-08T06:12:22.956Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:22.956Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:22.956Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:22.956Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:22.956Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: senderKeyDistributionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:22.958Z - -----------------------------------------
+2025-11-08T06:12:22.958Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:22.959Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:22.959Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:22.959Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5673868838155CAD196CB2BC053936B
+2025-11-08T06:12:23.752Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:24.083Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:12:24.263Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:24.369Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:24.476Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:25.664Z - -----------------------------------------
+2025-11-08T06:12:25.665Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:25.665Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:25.665Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:25.665Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:25.665Z - [FLUX] Message texte à traiter de 237692260821: "Adorable 
++237 6 92 67 38 91
+
+2sac 
+7000
+
+Nkolbissong"
+2025-11-08T06:12:25.667Z - -----------------------------------------
+2025-11-08T06:12:25.668Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:25.668Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:25.668Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:25.668Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A53F8DCF70A38F5C5FFAAE34C3AC88BC
+2025-11-08T06:12:25.671Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:26.187Z - -----------------------------------------
+2025-11-08T06:12:26.187Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:26.187Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:26.187Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:26.188Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:12:27.229Z - -----------------------------------------
+2025-11-08T06:12:27.229Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:27.230Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:27.230Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:27.230Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:27.230Z - [FLUX] Message texte à traiter de 237692260821: "15h"
+2025-11-08T06:12:27.232Z - -----------------------------------------
+2025-11-08T06:12:27.232Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:27.232Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:27.232Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:27.233Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A528B04D7608E86852C3E0E5455ABB86
+2025-11-08T06:12:27.235Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:27.919Z - -----------------------------------------
+2025-11-08T06:12:27.919Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:27.919Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:27.919Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:27.919Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:27.919Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:27.922Z - -----------------------------------------
+2025-11-08T06:12:27.922Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:27.922Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:27.923Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:27.923Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A54B42EA5F0A21A26201FD0A450D22B0
+2025-11-08T06:12:28.288Z - -----------------------------------------
+2025-11-08T06:12:28.288Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:28.288Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:28.288Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:28.288Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:28.301Z - -----------------------------------------
+2025-11-08T06:12:28.301Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:28.301Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:28.301Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:28.301Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:28.301Z - [FLUX] Message texte à traiter de 237692260821: "Univers vitalia
+Adresse : emia 
+Numéro client: 6 97 37 47 97
+Quantité 1 cyndynal 
+Heure 11h
+Prix 5500f"
+2025-11-08T06:12:28.309Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:28.529Z - -----------------------------------------
+2025-11-08T06:12:28.530Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:28.530Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:28.530Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:28.530Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5AAAED6FBF57BC6E8B3FDAB31695FFF
+2025-11-08T06:12:28.820Z - -----------------------------------------
+2025-11-08T06:12:28.821Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:28.821Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:28.821Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:28.821Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:28.821Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: messageContextInfo (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:28.827Z - -----------------------------------------
+2025-11-08T06:12:28.827Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:28.827Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:28.827Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:28.827Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A55E4147D3965ADB90FF42C8C376933D
+2025-11-08T06:12:28.916Z - -----------------------------------------
+2025-11-08T06:12:28.916Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:28.916Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:28.916Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:28.916Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:28.916Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:29.138Z - -----------------------------------------
+2025-11-08T06:12:29.138Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:29.138Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:29.138Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:29.138Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5893CFAE0A1A03648FA4AA06AB7DAA2
+2025-11-08T06:12:29.162Z - -----------------------------------------
+2025-11-08T06:12:29.162Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:29.162Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:29.162Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:29.162Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:29.162Z - [FLUX] Message texte à traiter de 237692260821: "Vitalis 
+Numéro : ‪‪‪‪‬ ‪‪‪‪‪‪‪‪‪‪‪‪+237682962155
+Adresse ; nkometou
+Nature ; 2 spray pour fumeurs 
+Montant ;10000"
+2025-11-08T06:12:29.167Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:29.170Z - -----------------------------------------
+2025-11-08T06:12:29.171Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:29.171Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:29.171Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:29.171Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5F3A24FD60172815684DF6118C48C9B
+2025-11-08T06:12:29.208Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:29.333Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:12:29.349Z - -----------------------------------------
+2025-11-08T06:12:29.349Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:29.349Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:29.349Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:29.349Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:29.350Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:29.352Z - -----------------------------------------
+2025-11-08T06:12:29.352Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:29.352Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:29.352Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:29.352Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A52EDB559990EE80DBD87EA503B6416B
+2025-11-08T06:12:29.819Z - -----------------------------------------
+2025-11-08T06:12:29.819Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:29.819Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:29.820Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:29.820Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:29.820Z - [FLUX] Message texte à traiter de 237692260821: "*NTEL ONLINE SHOP*
+NUMERO: +237 6 58 83 72 88
+
+ADRESSE : Je serai à la nouvelle route omnisports rue des generaux
+
+NATURE :   Trépied Q185
+
+NET A PERCEVOIR : 16.000f 
+
+ Souhaite être livré à 12h🧏🏾‍♀️🧏🏾‍♀️"
+2025-11-08T06:12:29.825Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:29.827Z - -----------------------------------------
+2025-11-08T06:12:29.828Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:29.828Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:29.828Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:29.828Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5D100DEBD8F56F86ACB1368C4CD9423
+2025-11-08T06:12:30.087Z - -----------------------------------------
+2025-11-08T06:12:30.087Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:30.087Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:30.087Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:30.087Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:30.088Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:30.090Z - -----------------------------------------
+2025-11-08T06:12:30.090Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:30.090Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:30.090Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:30.091Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A57BAAAF7EA6AC9BF28F7CB5F53ECB1D
+2025-11-08T06:12:30.356Z - -----------------------------------------
+2025-11-08T06:12:30.357Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:30.357Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:30.357Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:30.357Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:30.357Z - [FLUX] Message texte à traiter de 237692260821: "*Josiane* 
+NUMERO: 693455749
+ADRESSE : gendarmerie efoulan
+NATURE :  grands sacs couleurs différentes
+QUANTITÉ : 04
+NET A PERCEVOIR : 25000"
+2025-11-08T06:12:30.360Z - -----------------------------------------
+2025-11-08T06:12:30.360Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:30.360Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:30.361Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:30.361Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A53DEA5FD164B8D5059F319B9AD7118D
+2025-11-08T06:12:30.364Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:30.534Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:30.645Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:30.739Z - -----------------------------------------
+2025-11-08T06:12:30.739Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:30.739Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:30.739Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:30.740Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:30.740Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:30.741Z - -----------------------------------------
+2025-11-08T06:12:30.741Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:30.741Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:30.741Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:30.741Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5909D1308C214097D902740D8E93898
+2025-11-08T06:12:30.747Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:31.196Z - -----------------------------------------
+2025-11-08T06:12:31.197Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.197Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.197Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.197Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:31.197Z - [FLUX] Message texte à traiter de 237692260821: "Frid market
+
+Numero: 6 78 43 19 67
+
+Adresse: manguier
+
+Nature: 01 paquet contenant 03 tableaux 
+
+Total: 11.000f"
+2025-11-08T06:12:31.200Z - -----------------------------------------
+2025-11-08T06:12:31.200Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.200Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.200Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.200Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5BDA747E8F9769E8FFFF9F3EE03C56F
+2025-11-08T06:12:31.205Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:31.368Z - -----------------------------------------
+2025-11-08T06:12:31.369Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.369Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.369Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.369Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:12:31.389Z - -----------------------------------------
+2025-11-08T06:12:31.390Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.390Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.390Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.390Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:31.390Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:31.406Z - -----------------------------------------
+2025-11-08T06:12:31.407Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.407Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.407Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.407Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5969C3EB9017732F46A10AD1E992184
+2025-11-08T06:12:31.686Z - -----------------------------------------
+2025-11-08T06:12:31.686Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.686Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.687Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.687Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:31.687Z - [FLUX] Message texte à traiter de 237692260821: "*Mackhitech*
+NUMERO: ‪‪‪+237 6 95 65 72 19‬
+ADRESSE : pharmacie golf 
+NATURE : Apple Watch couleur noir 
+NET A PERCEVOIR : 25.000FCFA"
+2025-11-08T06:12:31.689Z - -----------------------------------------
+2025-11-08T06:12:31.689Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.689Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.689Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.689Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5F9CAC421CA1BDDE6D33A737ED3A3A3
+2025-11-08T06:12:31.692Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:31.957Z - -----------------------------------------
+2025-11-08T06:12:31.957Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.957Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.958Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.958Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:31.960Z - -----------------------------------------
+2025-11-08T06:12:31.960Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.960Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.960Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.960Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:31.960Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:31.964Z - -----------------------------------------
+2025-11-08T06:12:31.965Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:31.965Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:31.965Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:31.965Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A518576AF34BE6D85C375C72EE9BAA57
+2025-11-08T06:12:32.214Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:32.317Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:32.423Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:32.513Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:32.615Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:32.722Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:33.472Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:33.581Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:33.690Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:34.084Z - -----------------------------------------
+2025-11-08T06:12:34.084Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.084Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.084Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.084Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:34.084Z - [FLUX] Message texte à traiter de 237692260821: "🚨🚨Ton plan B 
+699541775
+Hôpital Deo gracias Émana avant 15h
+2 pièces xl rouge et noir 
+16000F"
+2025-11-08T06:12:34.087Z - -----------------------------------------
+2025-11-08T06:12:34.087Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.087Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.087Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.087Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5C8E3EBC9533244A0457F16ECA3DAF9
+2025-11-08T06:12:34.090Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:34.184Z - -----------------------------------------
+2025-11-08T06:12:34.184Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.184Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.185Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.185Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:34.185Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:34.358Z - -----------------------------------------
+2025-11-08T06:12:34.358Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.358Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.358Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.358Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A51E14BE465207D442988C6645073AD9
+2025-11-08T06:12:34.730Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:34.780Z - -----------------------------------------
+2025-11-08T06:12:34.780Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.780Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.781Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.781Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:34.781Z - [FLUX] Message texte à traiter de 237692260821: "Vitalis 
+Numéro : ‪‪‪‪‬ ‪‪‪‪‪‪‪‪‪‪‪‪698630890
+Adresse ; total Ngousso  
+Nature ; 2 spray pour fumeurs 
+Montant ;10000"
+2025-11-08T06:12:34.783Z - -----------------------------------------
+2025-11-08T06:12:34.783Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.783Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.783Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.783Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A54C1EDF01257291B5446072D0EB59F7
+2025-11-08T06:12:34.786Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+
+2025-11-08T06:12:34.841Z - [ERREUR GEMINI] [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 25.185436283s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"25s"}] (Modèle: gemini-2.5-flash): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 25.185436283s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"25s"}]
+    at handleResponseNotOk (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async Object.processRequest (/home/csdkqyubnt/public_html/wink_app/src/services/ai.service.js:144:25)
+    at async processIncomingMessage (/home/csdkqyubnt/public_html/wink_app/src/controllers/whatsapp.controller.js:119:26)
+2025-11-08T06:12:34.841Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:34.847Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:12:34.869Z - -----------------------------------------
+2025-11-08T06:12:34.869Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.869Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.870Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.870Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:34.870Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:34.872Z - -----------------------------------------
+2025-11-08T06:12:34.872Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:34.872Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:34.872Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:34.873Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5404F0FD0588B44E59A27F2D814AFD9
+2025-11-08T06:12:34.940Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:35.047Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:35.056Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:35.159Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:35.256Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:36.843Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:36.912Z - -----------------------------------------
+2025-11-08T06:12:36.912Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:36.913Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:36.913Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:36.913Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:12:36.955Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:37.067Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:37.601Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:37.703Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:37.715Z - -----------------------------------------
+2025-11-08T06:12:37.715Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:37.715Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:37.715Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:37.715Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:37.715Z - [FLUX] Message texte à traiter de 237692260821: "Ets Habiba 
+Numéro :675674555
+Adresse : lonkak 
+Taille :2xl ou 3xl  bambou multicolores 
+Net à percevoir :8500+1500 livraison 
+Nb:1 article à choisir 
+Appelez 🚨"
+2025-11-08T06:12:37.718Z - -----------------------------------------
+2025-11-08T06:12:37.718Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:37.718Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:37.719Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:37.719Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5439D52E4DB97D936B1B501E321E68C
+2025-11-08T06:12:37.721Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+
+2025-11-08T06:12:37.774Z - [ERREUR GEMINI] [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 22.252081306s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"22s"}] (Modèle: gemini-2.5-flash): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 22.252081306s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"22s"}]
+    at handleResponseNotOk (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async Object.processRequest (/home/csdkqyubnt/public_html/wink_app/src/services/ai.service.js:144:25)
+    at async processIncomingMessage (/home/csdkqyubnt/public_html/wink_app/src/controllers/whatsapp.controller.js:119:26)
+2025-11-08T06:12:37.774Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:37.803Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:37.804Z - -----------------------------------------
+2025-11-08T06:12:37.805Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:37.805Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:37.805Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:37.805Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:37.805Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:37.822Z - -----------------------------------------
+2025-11-08T06:12:37.822Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:37.822Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:37.822Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:37.822Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5081E69341F87D817D86262B1D1E318
+2025-11-08T06:12:37.831Z - -----------------------------------------
+2025-11-08T06:12:37.831Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:37.831Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:37.831Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:37.832Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:37.888Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:37.981Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:38.887Z - -----------------------------------------
+2025-11-08T06:12:38.887Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:38.887Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:38.887Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:38.887Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:38.888Z - [FLUX] Message texte à traiter de 237692260821: "Glycebiome*
+
+NUMERO: +237 694404730
+
+ADRESSE: damas
+
+NATURE :  2Gels bouchons
+
+NET A PERCEVOIR : 5000f
+
+HEURE: 13h"
+2025-11-08T06:12:38.890Z - -----------------------------------------
+2025-11-08T06:12:38.890Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:38.890Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:38.890Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:38.890Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A500EEE312C5DB0634518A31596B5154
+2025-11-08T06:12:38.893Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+
+2025-11-08T06:12:38.953Z - [ERREUR GEMINI] [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 21.071536605s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"21s"}] (Modèle: gemini-2.5-flash): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 21.071536605s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"21s"}]
+    at handleResponseNotOk (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async Object.processRequest (/home/csdkqyubnt/public_html/wink_app/src/services/ai.service.js:144:25)
+    at async processIncomingMessage (/home/csdkqyubnt/public_html/wink_app/src/controllers/whatsapp.controller.js:119:26)
+2025-11-08T06:12:38.953Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:39.012Z - -----------------------------------------
+2025-11-08T06:12:39.012Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:39.012Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:39.012Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:39.012Z - [FLUX] Horodatage validé. Âge: 1s.
+2025-11-08T06:12:39.013Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:39.015Z - -----------------------------------------
+2025-11-08T06:12:39.015Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:39.015Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:39.015Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:39.015Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A567C50A37259DFE3EFA866AB480F9F4
+2025-11-08T06:12:39.054Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:39.161Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:40.836Z - -----------------------------------------
+2025-11-08T06:12:40.836Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:40.836Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:40.837Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:40.837Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:40.837Z - [FLUX] Message texte à traiter de 237692260821: "*WTS Business* 
+NUMERO: ‪6 77 63 27 04‬
+ADRESSE : bocom madison essos
+NATURE :   Tondeuse 3 en1
+NET A PERCEVOIR :8500f"
+2025-11-08T06:12:40.841Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+2025-11-08T06:12:40.842Z - -----------------------------------------
+2025-11-08T06:12:40.843Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:40.843Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:40.843Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:40.843Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5425B636DBDBE1163C321472236A959
+
+2025-11-08T06:12:40.904Z - [ERREUR GEMINI] [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 19.125627535s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"19s"}] (Modèle: gemini-2.5-flash): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 19.125627535s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"19s"}]
+    at handleResponseNotOk (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async Object.processRequest (/home/csdkqyubnt/public_html/wink_app/src/services/ai.service.js:144:25)
+    at async processIncomingMessage (/home/csdkqyubnt/public_html/wink_app/src/controllers/whatsapp.controller.js:119:26)
+2025-11-08T06:12:40.904Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:40.988Z - -----------------------------------------
+2025-11-08T06:12:40.989Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:40.989Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:40.989Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:40.989Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:40.989Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: reactionMessage (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:40.991Z - -----------------------------------------
+2025-11-08T06:12:40.991Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:40.991Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:40.991Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:40.991Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A51832DB7D0F9FC43076642CEE2A818B
+2025-11-08T06:12:41.018Z - [ASYNCH] Réponse envoyée avec succès. Traitement terminé.
+2025-11-08T06:12:41.425Z - -----------------------------------------
+2025-11-08T06:12:41.426Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:41.426Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:41.426Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:41.426Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:41.426Z - [FLUX] Message texte à traiter de 237692260821: "*WTS Business* 
+NUMERO: 674735222
+ADRESSE : Bonne fontaine émana juste avant l école champions 
+NATURE :   Tondeuse oraimo 
+NET A PERCEVOIR :11000f
+17h"
+2025-11-08T06:12:41.428Z - -----------------------------------------
+2025-11-08T06:12:41.428Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:41.429Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:41.429Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:41.429Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5A8B581EB7C4F105D493B44B77AB46A
+2025-11-08T06:12:41.431Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+
+2025-11-08T06:12:41.482Z - [ERREUR GEMINI] [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 18.54152589s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"18s"}] (Modèle: gemini-2.5-flash): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 18.54152589s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"18s"}]
+    at handleResponseNotOk (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async Object.processRequest (/home/csdkqyubnt/public_html/wink_app/src/services/ai.service.js:144:25)
+    at async processIncomingMessage (/home/csdkqyubnt/public_html/wink_app/src/controllers/whatsapp.controller.js:119:26)
+2025-11-08T06:12:41.483Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:41.585Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:41.686Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:41.866Z - -----------------------------------------
+2025-11-08T06:12:41.866Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:41.866Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:41.866Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:41.867Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:41.867Z - [FLUX] Message texte à traiter de 237692260821: "*ustensiles aux prix doux*
+NUMERO: +237 6 94 32 03 95
+ADRESSE : nkoldongo 
+NATURE :   chaussure 
+NET A PERCEVOIR :1000f"
+2025-11-08T06:12:41.870Z - -----------------------------------------
+2025-11-08T06:12:41.871Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:41.871Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:41.871Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:41.871Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A5B49E2F8D910F6EF65B03B67D65EAA3
+2025-11-08T06:12:41.873Z - [ASYNCH] Utilisateur DB trouvé/créé: prospect_b2b. Lancement de SAM...
+
+2025-11-08T06:12:41.925Z - [ERREUR GEMINI] [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 18.096747528s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.5-flash","location":"global"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"18s"}] (Modèle: gemini-2.5-flash): Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10
+Please retry in 18.096747528s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.5-flash","location":"global"},"quotaValue":"10"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"18s"}]
+    at handleResponseNotOk (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/csdkqyubnt/nodevenv/public_html/wink_app/24/lib/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async Object.processRequest (/home/csdkqyubnt/public_html/wink_app/src/services/ai.service.js:144:25)
+    at async processIncomingMessage (/home/csdkqyubnt/public_html/wink_app/src/controllers/whatsapp.controller.js:119:26)
+2025-11-08T06:12:41.926Z - [ASYNCH] Réponse de SAM générée (Modèle: gemini-2.5-flash). Envoi Wasender...
+2025-11-08T06:12:42.024Z - [ERREUR DE FLUX CRITIQUE] Le code a échoué dans le TRY/CATCH: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:42.126Z - [ERREUR CRITIQUE] Impossible même d'envoyer le message d'erreur: Erreur d'envoi WhatsApp: Request failed with status code 429
+2025-11-08T06:12:42.306Z - -----------------------------------------
+2025-11-08T06:12:42.306Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:42.306Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:42.307Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:42.307Z - [FLUX] Horodatage validé. Âge: 0s.
+2025-11-08T06:12:42.307Z - [FLUX] Événement ignoré (pas de contenu texte). Type de message reçu: messageContextInfo (ex: reactionMessage, audioMessage, etc.)
+2025-11-08T06:12:42.316Z - -----------------------------------------
+2025-11-08T06:12:42.317Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:42.317Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:42.317Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:42.317Z - [FLUX] Message ignoré (ID déjà traité - doublon Wasender): A526BCC4FF55A63FC58BA2FA461B2DEA
+2025-11-08T06:12:42.729Z - -----------------------------------------
+2025-11-08T06:12:42.729Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:42.729Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:42.729Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:42.730Z - [FLUX] Événement ignoré (message 'fromMe').
+2025-11-08T06:12:43.134Z - -----------------------------------------
+2025-11-08T06:12:43.134Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:43.134Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:43.134Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:43.134Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:50.728Z - -----------------------------------------
+2025-11-08T06:12:50.728Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:50.728Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:50.728Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:50.728Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:50.746Z - -----------------------------------------
+2025-11-08T06:12:50.746Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:50.746Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:50.747Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:50.747Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:50.748Z - -----------------------------------------
+2025-11-08T06:12:50.748Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:50.748Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:50.749Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:50.749Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
+2025-11-08T06:12:50.752Z - -----------------------------------------
+2025-11-08T06:12:50.753Z - [FLUX] Appel Webhook reçu.
+2025-11-08T06:12:50.753Z - [SIG VERIFY] Signature vérifiée avec succès !
+2025-11-08T06:12:50.753Z - [FLUX] Événement Wasender reçu et validé.
+2025-11-08T06:12:50.753Z - [FLUX] Événement non pertinent ignoré (Event: messages.update). Renvoi de 200 OK.
