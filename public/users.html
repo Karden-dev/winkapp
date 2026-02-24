@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINK EXPRESS - Utilisateurs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#FF7F50">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/wink-icon-192x192.png">
+<meta name="apple-mobile-web-app-status-bar" content="#2C3E50">
+    <style>
+        :root {
+            --bs-corail: #FF7F50; --bs-bleu-profond: #2C3E50; --bs-bleu-celeste: #4A6491;
+            --bs-blanc-creme: #F8F9FA; --bs-gris-anthracite: #34495E;
+        }
+        body { background-color: var(--bs-blanc-creme); font-family: sans-serif; display: flex; min-height: 100vh; }
+        .sidebar { width: 250px; background-color: var(--bs-bleu-profond); min-height: 100vh; position: fixed; top: 0; left: 0; color: white; padding: 20px; transition: all 0.3s; z-index: 1000; }
+        .sidebar.collapsed { margin-left: -250px; }
+        .main-content { margin-left: 250px; padding: 20px; flex-grow: 1; transition: all 0.3s; display: flex; flex-direction: column; }
+        .main-content.expanded { margin-left: 0; }
+        .nav-link { color: white; padding: 10px 15px; margin-bottom: 5px; border-radius: 5px; }
+        .nav-link:hover { background-color: var(--bs-bleu-celeste); }
+        .top-header { background-color: white; padding: 15px 20px; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; }
+        .top-header .toggler { font-size: 1.5rem; color: var(--bs-bleu-profond); cursor: pointer; }
+        .card { border: none; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); overflow: hidden; }
+        .table thead { background-color: var(--bs-bleu-profond); color: white; }
+        .table td { vertical-align: middle; }
+        .btn-corail { background-color: var(--bs-corail); border-color: var(--bs-corail); color: white; }
+        .btn-corail:hover { background-color: #FF6347; border-color: #FF6347; }
+        .status-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; }
+        .status-actif .status-dot { background-color: #198754; }
+        .status-actif .status-text { color: #198754; font-weight: 500; }
+        .status-inactif .status-dot { background-color: #6c757d; }
+        .status-inactif .status-text { color: #6c757d; }
+        .inactive-row { color: #6c757d; background-color: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header d-flex justify-content-center"> <img src="wink-logo.png" alt="Logo WINK EXPRESS" style="width: 150px;"> </div>
+        <ul class="nav flex-column mt-4">
+            <li class="nav-item"><a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Tableau de bord</a></li>
+            <li class="nav-item"><a class="nav-link" href="orders.html"><i class="bi bi-box-seam"></i> Commandes</a></li>
+            <a class="nav-link" href="preparation.html"><i class="bi bi-box-arrow-in-up me-2"></i> Préparation Colis</a>
+            <li class="nav-item"><a class="nav-link" href="deliverymen.html"><i class="bi bi-bicycle"></i> Livreurs</a></li>
+            <li class="nav-item"><a class="nav-link" href="shops.html"><i class="bi bi-shop"></i> Marchands</a></li>
+            <li class="nav-item"><a class="nav-link" href="reports.html"><i class="bi bi-file-earmark-bar-graph"></i> Rapports</a></li>
+            <li class="nav-item"><a class="nav-link" href="remittances.html"><i class="bi bi-wallet"></i> Versements</a></li>
+            <a class="nav-link" href="suivis.html">
+                <i class="bi bi-chat-dots me-2"></i> Suivis
+               <span class="badge bg-danger ms-auto d-none" id="global-unread-badge">0</span>
+           </a>
+            
+            <li class="nav-item"><a class="nav-link" href="users.html"><i class="bi bi-person"></i> Utilisateurs</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <div class="top-header">
+            <i class="bi bi-list toggler" id="sidebar-toggler"></i>
+            <h1 class="h4 mb-0 ms-3 flex-grow-1">Gestion des Utilisateurs</h1>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-sm btn-corail me-3" data-bs-toggle="modal" data-bs-target="#addUserModal"><i class="bi bi-plus-circle me-1"></i> Ajouter un utilisateur</button>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://ui-avatars.com/api/?name=A&size=32&background=2C3E50&color=fff&rounded=true" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+                        <span id="userName">Admin</span>
+                    </a>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow"><li><a class="dropdown-item" href="#" id="logoutBtn">Déconnexion</a></li></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-4 mt-4 flex-grow-1 d-flex flex-column">
+             <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-0"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control bg-light border-0" placeholder="Rechercher un utilisateur par nom..." id="searchInput">
+                </div>
+            </div>
+            <div class="table-responsive flex-grow-1">
+                <table class="table table-hover">
+                    <thead><tr><th>Nom</th><th>Rôle</th><th>Statut</th><th>Créé le</th><th>Actions</th></tr></thead>
+                    <tbody id="usersTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addUserModal" tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title" id="addUserModalLabel">Ajouter un utilisateur</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                <form id="userForm">
+                    <input type="hidden" id="userId">
+                    <div class="modal-body">
+                        <div class="mb-3"><label for="userName" class="form-label">Nom complet</label><input type="text" class="form-control" id="userName" required></div>
+                        <div class="mb-3"><label for="userPhone" class="form-label">Téléphone</label><input type="tel" class="form-control" id="userPhone" required></div>
+                        <div class="mb-3"><label for="userRole" class="form-label">Rôle</label><select class="form-select" id="userRole" required></select></div>
+                        <div class="mb-3" id="userStatusContainer" style="display: none;"><label for="userStatus" class="form-label">Statut</label><select class="form-select" id="userStatus" required><option value="actif">Actif</option><option value="inactif">Inactif</option></select></div>
+                        <div class="mb-3" id="pin-field-container"><label for="userPin" class="form-label">Code PIN (4 chiffres)</label><input type="password" class="form-control" id="userPin" maxlength="4" required autocomplete="new-password"></div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-outline-secondary" id="changePinBtn" style="display: none;">Modifier le PIN</button>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                            <button type="submit" class="btn btn-corail" id="formSubmitBtn">Ajouter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="changePinModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Changer le PIN</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                <form id="changePinForm">
+                    <div class="modal-body"><label for="newPin" class="form-label">Nouveau PIN</label><input type="password" class="form-control" id="newPin" maxlength="4" required autocomplete="new-password"></div>
+                    <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button><button type="submit" class="btn btn-corail">Enregistrer</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+       <script src="js/auth.js"></script> 
+    <script src="js/users.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/idb@7/build/umd.js"></script>
+    <script src="/js/pwa-loader.js" defer></script>
+</body>
+</html>

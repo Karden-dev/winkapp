@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINK EXPRESS - Mes Performances</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#FF7F50">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/wink-icon-192x192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#2C3E50">
+    <style>
+        :root {
+            --bs-corail: #FF7F50;
+            --bs-corail-light: #ffd8c7;
+            --bs-bleu-profond: #2C3E50;
+            --bs-bleu-celeste: #4A6491;
+            --bs-blanc-creme: #f8f9fa; /* Changed for slightly warmer background */
+            --bs-gris-anthracite: #34495E;
+            --bs-success: #198754;
+            --bs-warning: #ffc107;
+            --bs-danger: #dc3545;
+            --bs-info: #0dcaf0;
+            --card-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            --card-radius: 12px;
+        }
+        body { background-color: var(--bs-blanc-creme); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; min-height: 100vh; margin: 0; padding: 0; color: var(--bs-bleu-profond); }
+        .offcanvas.offcanvas-start { background-color: var(--bs-bleu-profond); color: white; border-right: none; }
+        .offcanvas-header { border-bottom: 1px solid var(--bs-bleu-celeste); }
+        .offcanvas-header .btn-close { filter: invert(1); }
+        .nav-link { color: white; padding: 10px 15px; margin-bottom: 5px; border-radius: 5px; display: flex; align-items: center; transition: background-color 0.2s ease; }
+        .nav-link.active { background-color: var(--bs-corail); }
+        .nav-link:hover { background-color: var(--bs-bleu-celeste); color: white; }
+        .main-container { flex-grow: 1; padding: 1.25rem; display: flex; flex-direction: column; gap: 1.5rem; /* Added gap */ }
+        .navbar { background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+        /* Card Styling */
+        .card { border: none; border-radius: var(--card-radius); box-shadow: var(--card-shadow); }
+        .card-header { background-color: white; border-bottom: 1px solid #eee; font-weight: 600; color: var(--bs-bleu-profond); }
+        .card-title-sm { font-size: 0.85rem; color: var(--bs-gris-anthracite); margin-bottom: 0.25rem; text-transform: uppercase; }
+        .stat-value { font-size: 1.75rem; font-weight: 700; color: var(--bs-bleu-profond); display: flex; align-items: center; gap: 0.5rem;}
+        .stat-icon { font-size: 1.5rem; color: var(--bs-corail); }
+
+        /* Gauge Style (Example - requires JS to update width/color) */
+        .gauge-container { background-color: #e9ecef; border-radius: 50px; height: 10px; overflow: hidden; margin-top: 5px;}
+        .gauge-bar { background-color: var(--bs-success); height: 100%; width: 0%; transition: width 0.5s ease-out; border-radius: 50px; }
+        .gauge-value { font-size: 1.2rem; font-weight: 700; }
+
+        /* Progress Bar Styling */
+        .progress { height: 1.25rem; font-size: 0.8rem; border-radius: 50px;}
+        .progress-bar { transition: width 0.6s ease; font-weight: 600;}
+
+        /* Encouragement Message */
+        #encouragement-message { font-style: italic; text-align: center; padding: 0.75rem; border-radius: 8px; background-color: var(--bs-corail-light); color: var(--bs-corail); font-weight: 500;}
+
+        /* Personal Goal Section */
+        .goal-input-group { display: flex; gap: 0.5rem; align-items: center; }
+        .goal-input-group input { max-width: 100px; }
+
+        /* Animations */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .card, .stat-value, #encouragement-message { animation: fadeIn 0.5s ease-out forwards; }
+
+        /* Confettis (Optionnel - pour le script JS) */
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .stat-value { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <script> /* Auth check remains the same */
+        const user = JSON.parse(localStorage.getItem('user') || sessionStorage.getItem('user'));
+        if (!user || user.role !== 'livreur') { window.location.href = 'index.html'; }
+    </script>
+
+    <nav class="navbar sticky-top">
+        <div class="container-fluid d-flex justify-content-center position-relative">
+            <button class="btn btn-sm position-absolute start-0 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+            <span class="navbar-brand mb-0 h1">Mes Performances</span>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+          <div class="d-flex align-items-center mb-4">
+              <img src="https://ui-avatars.com/api/?name=Rider&size=48&background=FF7F50&color=fff&rounded=true" alt="Avatar du livreur" class="rounded-circle">
+              <div class="ms-3">
+                  <h6 class="mb-0 text-white" id="riderName">Nom du Livreur</h6>
+                  <small class="text-white-50" id="riderRole">Livreur</small>
+              </div>
+          </div>
+          <hr class="text-white-50">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="rider-app.html"><i class="bi bi-box-seam me-2"></i> Commandes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ridercash.html"><i class="bi bi-safe me-2"></i> Ma caisse</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="rider-performance.html"><i class="bi bi-graph-up me-2"></i> Mes Performances</a>
+            </li>
+          </ul>
+          <hr class="text-white-50 mt-auto">
+          <button class="btn btn-outline-light w-100 mt-3" id="logoutBtn"><i class="bi bi-box-arrow-right me-2"></i> Déconnexion</button>
+      </div>
+    </div>
+
+    <div class="main-container">
+        <canvas id="confetti-canvas"></canvas>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-md-4">
+                <label for="period-select" class="form-label small mb-1">Afficher pour :</label>
+                <select class="form-select form-select-sm" id="period-select">
+                    <option value="today">Aujourd'hui</option>
+                    <option value="yesterday">Hier</option> <option value="current_week">Cette semaine</option>
+                    <option value="last_week">Semaine dernière</option> <option value="current_month" selected>Ce mois-ci</option>
+                    <option value="last_month">Mois dernier</option>
+                </select>
+            </div>
+            <div class="col-md-8">
+                 <div id="encouragement-message" class="mt-3 mt-md-0">Chargement du message...</div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-title-sm">Courses Reçues</div>
+                        <div class="stat-value"><i class="bi bi-box-arrow-in-down stat-icon"></i> <span id="val-courses-recues">--</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-title-sm">Courses Livrées</div>
+                        <div class="stat-value"><i class="bi bi-check2-circle stat-icon text-success"></i> <span id="val-courses-livrees">--</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-title-sm">Taux Livrabilité</div>
+                        <div class="gauge-value" id="taux-livrabilite">-- %</div>
+                        <div class="gauge-container">
+                            <div class="gauge-bar" id="taux-livrabilite-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-title-sm">Jours Travaillés</div>
+                        <div class="stat-value"><i class="bi bi-calendar-check stat-icon text-info"></i> <span id="val-jours-travailles">--</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Ma Rémunération (<span id="remuneration-period">Ce mois-ci</span>)
+            </div>
+            <div class="card-body" id="remuneration-content">
+                <div class="text-center p-3 text-muted">
+                    <div class="spinner-border spinner-border-sm" role="status"></div>
+                    Chargement...
+                </div>
+                </div>
+        </div>
+
+        <div class="card d-none" id="objectifs-admin-section">
+            <div class="card-header">Objectif de Prime (<span id="objectif-admin-period">Ce mois-ci</span>)</div>
+            <div class="card-body">
+                <div>Objectif fixé par l'admin : <strong id="objectif-admin-courses">--</strong> courses</div>
+                <div class="progress mt-2 mb-2">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="objectif-admin-progress-bar">0%</div>
+                </div>
+                 <div class="d-flex justify-content-between">
+                     <small>Prime par course : <strong id="prime-par-course">-- FCFA</strong></small>
+                     <small>Prime totale estimée : <strong id="prime-totale-estimee">-- FCFA</strong></small>
+                 </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                Mes Objectifs Personnels
+                <button class="btn btn-sm btn-outline-secondary" id="edit-personal-goals-btn" title="Modifier mes objectifs"><i class="bi bi-pencil"></i> Modifier</button>
+            </div>
+            <div class="card-body">
+                <div id="display-personal-goals">
+                    <div class="mb-2"><strong>Aujourd'hui :</strong> <span id="display-goal-daily">--</span> courses <span class="text-muted">(Progression : --/--)</span></div>
+                    <div class="mb-2"><strong>Cette semaine :</strong> <span id="display-goal-weekly">--</span> courses <span class="text-muted">(Progression : --/--)</span></div>
+                    <div><strong>Ce mois-ci :</strong> <span id="display-goal-monthly">--</span> courses <span class="text-muted">(Progression : --/--)</span></div>
+                </div>
+                <div id="edit-personal-goals" class="d-none">
+                     <div class="mb-3 goal-input-group">
+                         <label for="input-goal-daily" class="form-label mb-0 me-2">Quotidien:</label>
+                         <input type="number" class="form-control form-control-sm" id="input-goal-daily" min="0">
+                         <span>courses</span>
+                     </div>
+                     <div class="mb-3 goal-input-group">
+                         <label for="input-goal-weekly" class="form-label mb-0 me-2">Hebdo:</label>
+                         <input type="number" class="form-control form-control-sm" id="input-goal-weekly" min="0">
+                          <span>courses</span>
+                     </div>
+                     <div class="mb-3 goal-input-group">
+                         <label for="input-goal-monthly" class="form-label mb-0 me-2">Mensuel:</label>
+                         <input type="number" class="form-control form-control-sm" id="input-goal-monthly" min="0">
+                          <span>courses</span>
+                     </div>
+                     <button class="btn btn-sm btn-success" id="save-personal-goals-btn">Enregistrer</button>
+                     <button class="btn btn-sm btn-light" id="cancel-edit-goals-btn">Annuler</button>
+                     <div id="personal-goals-feedback" class="form-text mt-2"></div>
+                </div>
+                <div class="mt-3">
+                    <label class="small text-muted">Progression Mensuelle Perso</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="personal-goal-monthly-bar">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+             <div class="card-header">Évolution des Courses Livrées</div>
+             <div class="card-body" style="min-height: 250px;">
+                 <canvas id="delivery-trend-chart"></canvas>
+             </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script> <script src="js/auth.js"></script>
+    <script src="js/rider-performance.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/idb@7/build/umd.js"></script>
+    <script src="/js/pwa-loader.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</body>
+</html>

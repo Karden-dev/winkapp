@@ -1,0 +1,22 @@
+{
+  "name": "WINK EXPRESS",
+  "short_name": "Wink",
+  "description": "Plateforme de Gestion de Commandes et de Livraison WINK EXPRESS.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#2C3E50",
+  "theme_color": "#FF7F50",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/wink-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/wink-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

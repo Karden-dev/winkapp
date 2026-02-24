@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINK EXPRESS - Gestion de la Caisse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+   <meta name="theme-color" content="#FF7F50">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/wink-icon-192x192.png">
+<meta name="apple-mobile-web-app-status-bar" content="#2C3E50">
+   <style>
+        :root {
+            --clr-primary: #FF7F50; 
+            --clr-secondary: #2C3E50; 
+            --clr-accent: #4A6491;
+            --clr-background: #F8F9FA;
+            --clr-text: #34495E;
+        }
+        body { 
+            background-color: var(--clr-background); 
+            font-family: sans-serif; 
+            display: flex; 
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- Sidebar Styles --- */
+        .sidebar { 
+            width: 250px; 
+            background-color: var(--clr-secondary); 
+            min-height: 100vh; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            color: white; 
+            padding: 20px; 
+            transition: transform 0.3s ease; 
+            z-index: 1050; 
+        }
+        .sidebar-header {
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--clr-accent);
+            margin-bottom: 20px;
+        }
+        .sidebar .nav-link { 
+            color: white; 
+            padding: 10px 15px; 
+            margin-bottom: 5px; 
+            border-radius: 5px; 
+            transition: background-color 0.2s;
+        }
+        .sidebar .nav-link:hover { 
+            background-color: var(--clr-accent); 
+        }
+        .sidebar .nav-link.active { 
+            background-color: var(--clr-primary); 
+        }
+        .sidebar .dropdown-menu { 
+            background-color: var(--clr-secondary); 
+            border: none; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .sidebar .dropdown-item { 
+            color: white; 
+            padding: 8px 15px; 
+            font-size: 0.95rem;
+        }
+        .sidebar .dropdown-item:hover { 
+            background-color: var(--clr-accent); 
+        }
+        .sidebar .dropdown-item.active { 
+            background-color: var(--clr-primary); 
+            font-weight: bold; 
+        }
+        .sidebar .dropdown-toggle.active {
+            background-color: var(--clr-accent);
+        }
+
+        /* --- Main Content Styles --- */
+        .main-content { 
+            margin-left: 250px; 
+            padding: 20px; 
+            flex-grow: 1; 
+            transition: margin-left 0.3s ease; 
+            display: flex; 
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Responsive collapse */
+        @media (max-width: 991.98px) {
+            .sidebar { transform: translateX(-250px); }
+            .sidebar.show { transform: translateX(0); }
+            .main-content { margin-left: 0; }
+        }
+        @media (min-width: 992px) {
+            .sidebar.collapsed { transform: translateX(-250px); }
+            .main-content.expanded { margin-left: 0; }
+        }
+        
+        /* --- Header Styles --- */
+        .header { 
+            background-color: white; 
+            padding: 15px 20px; 
+            border-bottom: 1px solid #dee2e6; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            flex-wrap: wrap;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .toggler { 
+            font-size: 1.5rem; 
+            color: var(--clr-secondary); 
+            cursor: pointer; 
+        }
+
+        /* --- Custom Card & Stats --- */
+        .card { 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08); 
+            border: none; 
+        }
+        .stat-card .card-title { 
+            font-size: 0.9rem; 
+            color: #6c757d; 
+            text-transform: uppercase; 
+        }
+        .stat-card .stat-value { 
+            font-size: 1.75rem; 
+            font-weight: 700; 
+            margin-bottom: 0;
+        }
+        .nav-tabs .nav-link { 
+            color: var(--clr-secondary); 
+        }
+        .nav-tabs .nav-link.active { 
+            background-color: var(--clr-secondary); 
+            color: white; 
+        }
+        .tab-pane { 
+            min-height: 400px; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        /* --- Table & Filters --- */
+        .table thead { 
+            background-color: var(--clr-secondary); 
+            color: white; 
+            position: sticky; 
+            top: 0; 
+        }
+        .table-responsive { 
+            flex-grow: 1; 
+        }
+        
+        /* --- Buttons & Inputs --- */
+        .btn-primary-custom { 
+            background-color: var(--clr-primary); 
+            border-color: var(--clr-primary); 
+            color: white; 
+        }
+        .btn-primary-custom:hover { 
+            background-color: #FF6347; 
+            border-color: #FF6347; 
+            color: white; 
+        }
+        .search-results {
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            background: white;
+            border: 1px solid #ced4da;
+            border-top: none;
+            max-height: 200px;
+            overflow-y: auto;
+            border-radius: 0 0 5px 5px;
+        }
+        .search-results div {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .search-results div:hover {
+            background-color: #f0f0f0;
+        }
+        
+        #notification-container { 
+            position: fixed; 
+            top: 20px; 
+            right: 20px; 
+            z-index: 2000; 
+            width: 350px; 
+            max-width: 90%;
+        }
+
+        @media (max-width: 991.98px) {
+            .filter-row .input-group,
+            .filter-row .col-lg-2 {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+            .filter-row {
+                flex-direction: column;
+                align-items: stretch !important;
+            }
+        }
+        @media (min-width: 992px) {
+            .metrics-row > .col-md-2 {
+                flex: 0 0 auto;
+                width: 16.666667%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="notification-container"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header d-flex justify-content-center">
+            <img src="wink-logo.png" alt="Logo WINK EXPRESS" style="width: 150px;">
+        </div>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2"></i> Tableau de bord</a>
+            <a class="nav-link" href="orders.html"><i class="bi bi-box-seam"></i> Commandes</a>
+            <a class="nav-link" href="preparation.html"><i class="bi bi-box-arrow-in-up me-2"></i> Préparation Colis</a>
+            <a class="nav-link" href="deliverymen.html"><i class="bi bi-bicycle"></i> Livreurs</a>
+            <a class="nav-link" href="shops.html"><i class="bi bi-shop"></i> Marchands</a>
+            
+            <a class="nav-link" href="reports.html"><i class="bi bi-file-earmark-bar-graph"></i> Rapports</a>
+            
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="remittancesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-wallet"></i> Versements
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="remittancesDropdown">
+                    <li><a class="dropdown-item" href="remittances.html">Versements en attente</a></li>
+                    <li><a class="dropdown-item" href="debts.html">Créances</a></li>
+                    <li><a class="dropdown-item active" href="cash.html">Caisse</a></li>
+                </ul>
+            </div>
+            <a class="nav-link" href="suivis.html">
+                <i class="bi bi-chat-dots me-2"></i> Suivis
+                <span class="badge bg-danger ms-auto d-none" id="global-unread-badge">0</span>
+            </a>
+            <a class="nav-link" href="users.html"><i class="bi bi-person"></i> Utilisateurs</a>
+        </nav>
+    </aside>
+
+    <main class="main-content" id="main-content">
+        <header class="header">
+            <i class="bi bi-list toggler" id="sidebar-toggler"></i>
+            <h1 class="h4 mb-0 ms-3 flex-grow-1">Gestion de la Caisse</h1>
+            <div class="d-flex align-items-center gap-2">
+                <div id="header-actions-container" class="btn-toolbar"></div>
+                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#closingManagerModal"><i class="bi bi-safe me-1"></i> Gérer la Clôture</button>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://ui-avatars.com/api/?name=A&size=32&background=2C3E50&color=fff&rounded=true" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+                        <span id="userName">Admin</span>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#" id="logoutBtn">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <section class="card p-3 mb-4">
+            <h5 class="mb-3">Situation de la caisse</h5>
+            <div class="row metrics-row">
+                <div class="col-md-2"><div class="stat-card text-center"><h6 class="card-title">Encaissé</h6><p class="stat-value text-success" id="db-total-collected">0 FCFA</p></div></div>
+                <div class="col-md-2"><div class="stat-card text-center"><h6 class="card-title">Créances Remboursées</h6><p class="stat-value text-info" id="db-total-debts-settled">0 FCFA</p></div></div>
+                <div class="col-md-2"><div class="stat-card text-center"><h6 class="card-title">Dépenses</h6><p class="stat-value text-danger" id="db-total-expenses">0 FCFA</p></div></div>
+                <div class="col-md-2"><div class="stat-card text-center"><h6 class="card-title">Décaissements</h6><p class="stat-value text-warning" id="db-total-withdrawals">0 FCFA</p></div></div>
+                <div class="col-md-4">
+                    <div class="stat-card text-center bg-light rounded p-2">
+                        <h6 class="card-title">Montant en Caisse</h6>
+                        <p class="stat-value text-primary" id="db-cash-on-hand">0 FCFA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card p-3 mb-4">
+            <div class="row g-3 filter-row align-items-center">
+                <div class="col-lg-5">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text">Période du</span>
+                        <input type="date" class="form-control" id="startDate">
+                        <span class="input-group-text">au</span>
+                        <input type="date" class="form-control" id="endDate">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" id="globalSearchInput" placeholder="Rechercher dans l'onglet actif...">
+                    </div>
+                </div>
+                <div class="col-lg-2 d-grid">
+                    <button class="btn btn-sm btn-primary-custom flex-fill" id="filterBtn"><i class="bi bi-funnel me-1"></i>Filtrer</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card p-3 flex-grow-1 d-flex flex-column">
+            <ul class="nav nav-tabs" id="cashTabs" role="tablist">
+                <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#remittances-panel" type="button">Versements Livreurs</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#shortfalls-panel" type="button">Manquants Livreurs</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#expenses-panel" type="button">Dépenses</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#withdrawals-panel" type="button">Décaissements</button></li>
+            </ul>
+            <div class="tab-content pt-3 flex-grow-1 d-flex flex-column">
+                <div class="tab-pane fade show active" id="remittances-panel">
+                    <div class="table-responsive"><table class="table table-hover">
+                        <thead><tr><th>Livreur</th><th>Attente</th><th>Montant Attendu</th><th>Confirmé</th><th>Montant Confirmé</th><th>Actions</th></tr></thead>
+                        <tbody id="summaryTableBody"></tbody>
+                    </table></div>
+                </div>
+                <div class="tab-pane fade" id="shortfalls-panel">
+                    <div class="table-responsive"><table class="table table-hover">
+                        <thead><tr><th>Livreur</th><th>Montant Manquant</th><th>Statut</th><th>Date Création</th><th>Date Règlement</th><th>Actions</th></tr></thead>
+                        <tbody id="shortfallsTableBody"></tbody>
+                    </table></div>
+                </div>
+                <div class="tab-pane fade" id="expenses-panel">
+                    <div class="table-responsive"><table class="table table-sm table-striped">
+                        <thead><tr><th>Date</th><th>Utilisateur</th><th>Catégorie</th><th>Montant</th><th>Commentaire</th><th>Actions</th></tr></thead>
+                        <tbody id="expensesTableBody"></tbody>
+                    </table></div>
+                </div>
+                <div class="tab-pane fade" id="withdrawals-panel">
+                    <div class="table-responsive"><table class="table table-sm table-striped">
+                        <thead><tr><th>Date</th><th>Effectué par</th><th>Montant</th><th>Commentaire</th><th>Actions</th></tr></thead>
+                        <tbody id="withdrawalsTableBody"></tbody>
+                    </table></div>
+                </div>
+            </div>
+            <div id="pagination-container" class="mt-3 d-flex justify-content-end"></div>
+        </section>
+    </main>
+    
+    <div class="modal fade" id="addExpenseModal" tabindex="-1" aria-labelledby="addExpenseModalLabel" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="addExpenseModalLabel">Saisir une dépense</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <form id="expenseForm">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="expenseUserSearch" class="form-label">Utilisateur concerné</label>
+                        <div class="search-container">
+                            <input type="text" class="form-control" id="expenseUserSearch" placeholder="Rechercher un utilisateur..." required>
+                            <div id="expenseUserSearchResults" class="search-results d-none"></div>
+                        </div>
+                        <input type="hidden" id="expenseUserId" name="expenseUserId">
+                    </div>
+                    <div class="mb-3"><label for="expenseDateInput" class="form-label">Date</label><input type="date" class="form-control" id="expenseDateInput" required></div>
+                    <div class="mb-3"><label for="expenseCategorySelect" class="form-label">Catégorie</label><select class="form-select" id="expenseCategorySelect" required></select></div>
+                    <div class="mb-3"><label for="expenseAmountInput" class="form-label">Montant</label><input type="number" class="form-control" id="expenseAmountInput" required min="1"></div>
+                    <div class="mb-3"><label for="expenseCommentInput" class="form-label">Commentaire</label><textarea class="form-control" id="expenseCommentInput" rows="3"></textarea></div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button><button type="submit" class="btn btn-primary-custom">Enregistrer</button></div>
+            </form>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="editExpenseModal" tabindex="-1" aria-labelledby="editExpenseModalLabel" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="editExpenseModalLabel">Modifier une dépense</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <form id="editExpenseForm">
+                <input type="hidden" id="editExpenseId">
+                <div class="modal-body">
+                    <div class="mb-3"><label for="editExpenseAmount" class="form-label">Montant</label><input type="number" class="form-control" id="editExpenseAmount" required min="1"></div>
+                    <div class="mb-3"><label for="editExpenseComment" class="form-label">Commentaire</label><textarea class="form-control" id="editExpenseComment" rows="3"></textarea></div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button><button type="submit" class="btn btn-primary-custom">Enregistrer</button></div>
+            </form>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="manualWithdrawalModal" tabindex="-1" aria-labelledby="manualWithdrawalModalLabel" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="manualWithdrawalModalLabel">Décaissement manuel</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <form id="withdrawalForm">
+                <div class="modal-body">
+                    <div class="mb-3"><label for="withdrawalAmountInput" class="form-label">Montant à décaisser</label><input type="number" class="form-control" id="withdrawalAmountInput" required min="1"></div>
+                    <div class="mb-3"><label for="withdrawalDateInput" class="form-label">Date</label><input type="date" class="form-control" id="withdrawalDateInput" required></div>
+                    <div class="mb-3"><label for="withdrawalCommentInput" class="form-label">Commentaire</label><textarea class="form-control" id="withdrawalCommentInput" rows="3" placeholder="Ex: Retrait pour dépôt banque"></textarea></div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button><button type="submit" class="btn btn-primary-custom">Confirmer</button></div>
+            </form>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="editWithdrawalModal" tabindex="-1" aria-labelledby="editWithdrawalModalLabel" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="editWithdrawalModalLabel">Modifier un décaissement</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <form id="editWithdrawalForm">
+                <input type="hidden" id="editWithdrawalId">
+                <div class="modal-body">
+                    <div class="mb-3"><label for="editWithdrawalAmount" class="form-label">Montant</label><input type="number" class="form-control" id="editWithdrawalAmount" required min="1"></div>
+                    <div class="mb-3"><label for="editWithdrawalComment" class="form-label">Commentaire</label><textarea class="form-control" id="editWithdrawalComment" rows="3"></textarea></div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button><button type="submit" class="btn btn-primary-custom">Enregistrer</button></div>
+            </form>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="remittanceDetailsModal" tabindex="-1" aria-labelledby="remittanceDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gérer les versements de : <span id="modalDeliverymanName"></span></h5>
+                    <h5 class="modal-title ms-auto">Montant Attendu: <span id="modalTotalExpected" class="fw-bold">0 FCFA</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-end mb-3">
+                         <button class="btn btn-primary-custom btn-sm" id="confirmBatchBtn"><i class="bi bi-check-circle me-1"></i> Confirmer la sélection</button>
+                    </div>
+                    <div class="table-responsive" style="max-height: 500px;">
+                        <table class="table table-striped table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="selectAllModal"></th>
+                                    <th style="width: 35%;">Commentaire</th>
+                                    <th>Montant Attendu</th>
+                                    <th>Montant Confirmé</th>
+                                    <th>Statut</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modalTransactionsTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="closingManagerModal" tabindex="-1" aria-labelledby="closingManagerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable"><div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="closingManagerModalLabel">Gestion de la Clôture de Caisse</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-5 border-end">
+                        <h6 class="mb-3">Clôturer une journée</h6>
+                        <form id="closeCashForm">
+                            <div class="mb-3"><label for="closeDate" class="form-label">Date à clôturer</label><input type="date" class="form-control" id="closeDate" required></div>
+                            <div class="mb-3"><label for="actualAmount" class="form-label">Montant total compté en caisse</label><input type="number" class="form-control" id="actualAmount" required></div>
+                            <div class="mb-3"><label for="closeComment" class="form-label">Commentaire</label><textarea class="form-control" id="closeComment" rows="2"></textarea></div>
+                            <div class="d-grid"><button type="submit" class="btn btn-danger">Clôturer la journée</button></div>
+                        </form>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                            <h6 class="mb-0">Historique des Clôtures</h6>
+                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                <label for="historyStartDate" class="form-label form-label-sm mb-0">Du</label>
+                                <input type="date" class="form-control form-control-sm d-inline-block w-auto" id="historyStartDate" style="max-width: 150px;">
+                                <label for="historyEndDate" class="form-label form-label-sm mb-0">Au</label>
+                                <input type="date" class="form-control form-control-sm d-inline-block w-auto" id="historyEndDate" style="max-width: 150px;">
+                                <button class="btn btn-sm btn-outline-success ms-2" id="exportHistoryBtn"><i class="bi bi-file-earmark-spreadsheet"></i> Exporter</button>
+                            </div>
+                        </div>
+                        <div class="table-responsive" style="max-height: 400px;">
+                            <table class="table table-sm table-striped">
+                                <thead><tr><th>Date</th><th>Attendu</th><th>Compté</th><th>Différence</th></tr></thead>
+                                <tbody id="closingsHistoryTableBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="confirmAmountModal" tabindex="-1" aria-labelledby="confirmAmountModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmAmountModalLabel">Confirmer le Montant Versé</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="confirmAmountForm">
+                    <div class="modal-body">
+                        <p>Montant total attendu pour la sélection : <strong id="expectedAmountDisplay">0 FCFA</strong></p>
+                        <div class="mb-3">
+                            <label for="confirmAmountInput" class="form-label">Montant total réellement versé par le livreur :</label>
+                            <input type="number" class="form-control" id="confirmAmountInput" required step="1">
+                            <div class="form-text text-danger d-none" id="amountError">Veuillez entrer un montant numérique valide.</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary-custom" id="confirmAmountBtn">Confirmer le Versement</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="settleShortfallModal" tabindex="-1" aria-labelledby="settleShortfallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="settleShortfallModalLabel">Régler un Manquant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="settleShortfallForm">
+                    <div class="modal-body">
+                        <p>Montant total dû : <strong id="shortfallDueDisplay">0 FCFA</strong></p>
+                        <div class="mb-3">
+                            <label for="settlementDateInput" class="form-label">Date de règlement</label>
+                            <input type="date" class="form-control" id="settlementDateInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="settleShortfallAmountInput" class="form-label">Montant payé pour le règlement :</label>
+                            <input type="number" class="form-control" id="settleShortfallAmountInput" required min="1" step="1">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-success">Confirmer le Règlement</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="createShortfallModal" tabindex="-1" aria-labelledby="createShortfallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createShortfallModalLabel">Créer un Manquant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form id="createShortfallForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="shortfallDeliverymanSelect" class="form-label">Livreur</label>
+                            <select class="form-select" id="shortfallDeliverymanSelect" required>
+                                <option value="">Sélectionner un livreur...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="shortfallDateInput" class="form-label">Date du manquant</label>
+                            <input type="date" class="form-control" id="shortfallDateInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="shortfallAmountInput" class="form-label">Montant du manquant</label>
+                            <input type="number" class="form-control" id="shortfallAmountInput" required min="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="shortfallCommentInput" class="form-label">Commentaire (Optionnel)</label>
+                            <textarea class="form-control" id="shortfallCommentInput" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editShortfallModal" tabindex="-1" aria-labelledby="editShortfallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editShortfallModalLabel">Modifier un Manquant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form id="editShortfallForm">
+                    <div class="modal-body">
+                        <input type="hidden" id="editShortfallId">
+                        <div class="mb-3">
+                            <label for="editShortfallAmount" class="form-label">Montant</label>
+                            <input type="number" class="form-control" id="editShortfallAmount" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editShortfallComment" class="form-label">Commentaire</label>
+                            <textarea class="form-control" id="editShortfallComment" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="js/auth.js"></script> 
+    <script src="js/cash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/idb@7/build/umd.js"></script>
+    <script src="/js/pwa-loader.js" defer></script>
+</body>
+</html>

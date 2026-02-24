@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINK EXPRESS - Performance des Livreurs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#FF7F50">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/wink-icon-192x192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#2C3E50">
+    <style>
+        :root {
+            --clr-primary: #FF7F50;
+            --clr-secondary: #2C3E50;
+            --clr-accent: #4A6491;
+            --clr-background: #F8F9FA;
+            --clr-text: #34495E;
+            --card-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            --card-radius: 12px;
+        }
+        body { background-color: var(--clr-background); font-family: sans-serif; display: flex; min-height: 100vh; overflow-x: hidden; }
+        
+        /* --- Sidebar Styles --- */
+        .sidebar { width: 250px; background-color: var(--clr-secondary); min-height: 100vh; position: fixed; top: 0; left: 0; color: white; padding: 20px; transition: transform 0.3s ease; z-index: 1050; }
+        .sidebar-header { padding-bottom: 20px; border-bottom: 1px solid var(--clr-accent); margin-bottom: 20px; }
+        .nav-link { color: white; padding: 10px 15px; margin-bottom: 5px; border-radius: 5px; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: var(--clr-accent); }
+        .nav-link.active { background-color: var(--clr-primary); }
+        
+        /* --- Main Content Styles --- */
+        .main-content { margin-left: 250px; padding: 20px; flex-grow: 1; transition: margin-left 0.3s ease; display: flex; flex-direction: column; position: relative; }
+        @media (max-width: 991.98px) { .sidebar { transform: translateX(-250px); } .sidebar.show { transform: translateX(0); } .main-content { margin-left: 0; } }
+        @media (min-width: 992px) { .sidebar.collapsed { transform: translateX(-250px); } .main-content.expanded { margin-left: 0; } }
+        
+        /* --- Header Styles --- */
+        .header { background-color: white; padding: 15px 20px; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .toggler { font-size: 1.5rem; color: var(--clr-secondary); cursor: pointer; }
+        .card { border: none; border-radius: var(--card-radius); box-shadow: var(--card-shadow); }
+        
+        /* --- Stats Cards --- */
+        .stat-block .card-header { background-color: var(--clr-secondary); color: white; font-weight: 600; font-size: 0.9rem; border-radius: 12px 12px 0 0; padding: 0.75rem 1rem; }
+        .stat-card-sm { text-align: center; padding: 1rem 0.5rem; border-right: 1px solid #eee; }
+        .stat-card-sm:last-child { border-right: none; }
+        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--clr-secondary); margin-bottom: 0; }
+        .stat-label { font-size: 0.75rem; text-transform: uppercase; color: #6c757d; margin-top: 0; }
+        
+        /* --- Table & Filters --- */
+        .table thead { background-color: var(--clr-secondary); color: white; font-size: 0.8rem; position: sticky; top: 0; z-index: 1; }
+        .table th, .table td { vertical-align: middle; font-size: 0.85rem; padding: 0.75rem 1rem; white-space: nowrap;}
+        .distinction { display: inline-block; width: 28px; text-align: center; margin-right: 8px; font-weight: bold;}
+        .distinction-icon { font-size: 1.2rem; vertical-align: middle;}
+        .gold { color: #FFD700; } .silver { color: #C0C0C0; } .bronze { color: #CD7F32; }
+        .rank-number { color: #6c757d; font-size: 0.9em;}
+
+        .filter-section { background-color: white; padding: 1rem; border-radius: var(--card-radius); box-shadow: var(--card-shadow); margin-bottom: 1.5rem; }
+        .filter-section .form-label { margin-bottom: 5px; font-size: 0.8rem; }
+        .filter-section .form-control-sm, .filter-section .btn-sm { height: calc(1.5em + 0.5rem + 2px); }
+        @media (min-width: 992px) { .filter-section .row > div { flex: 1 1 auto; min-width: 150px; } .filter-section .col-lg-auto { flex: 0 0 auto; } }
+        .btn-primary-custom { background-color: var(--clr-primary); border-color: var(--clr-primary); color: white; }
+        .btn-primary-custom:hover { background-color: #FF6347; border-color: #FF6347; }
+        #notification-container { position: fixed; top: 20px; right: 20px; z-index: 2000; width: 350px; max-width: 90%; }
+        .modal-xl { max-width: 90%; }
+        
+        /* --- Correction Journal de Performance (Ajout Scrollbar) --- */
+        .journal-table th { font-size: 0.75rem; padding: 0.5rem;}
+        .journal-table td { font-size: 0.8rem; padding: 0.5rem;}
+        .journal-table th.text-end, .journal-table td.text-end { text-align: right !important; }
+        .journal-scroll-container {
+            max-height: 400px; /* Limite la hauteur visible */
+            overflow-y: auto;  /* Ajoute la barre de défilement verticale */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        /* --- Fin Correction Journal --- */
+    </style>
+</head>
+<body>
+    <div id="notification-container"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <header class="sidebar-header d-flex justify-content-center"> <img src="wink-logo.png" alt="Logo WINK EXPRESS" style="width: 150px;"> </header>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2 me-2"></i> Tableau de bord</a>
+            <a class="nav-link" href="orders.html"><i class="bi bi-box-seam me-2"></i> Commandes</a>
+            <a class="nav-link" href="preparation.html"><i class="bi bi-box-arrow-in-up me-2"></i> Préparation Colis</a>
+            <a class="nav-link active" href="deliverymen.html"><i class="bi bi-bicycle me-2"></i> Livreurs</a>
+            <a class="nav-link" href="shops.html"><i class="bi bi-shop me-2"></i> Marchands</a>
+            <a class="nav-link" href="reports.html"><i class="bi bi-file-earmark-bar-graph me-2"></i> Rapports</a>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="remittancesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-wallet me-2"></i> Versements
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="remittancesDropdown">
+                    <li><a class="dropdown-item" href="remittances.html">Versements en attente</a></li>
+                    <li><a class="dropdown-item" href="debts.html">Créances</a></li>
+                    <li><a class="dropdown-item" href="cash.html">Caisse</a></li>
+                </ul>
+            </div>
+            <a class="nav-link" href="suivis.html">
+                <i class="bi bi-chat-dots me-2"></i> Suivis
+                <span class="badge bg-danger ms-auto d-none" id="global-unread-badge">0</span>
+            </a>
+            <a class="nav-link" href="users.html"><i class="bi bi-person me-2"></i> Utilisateurs</a>
+        </nav>
+    </aside>
+
+    <main class="main-content" id="main-content">
+        <header class="header">
+            <i class="bi bi-list toggler" id="sidebar-toggler"></i>
+            <h1 class="h4 mb-0 ms-3 flex-grow-1">Performance des Livreurs</h1>
+            <div class="header-actions dropdown">
+                <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://ui-avatars.com/api/?name=A&size=32&background=2C3E50&color=fff&rounded=true" alt="Avatar" width="32" height="32" class="rounded-circle me-2">
+                    <span id="userName">{{username}}</span>
+                </a>
+                <ul class="dropdown-menu text-small shadow"><li><a class="dropdown-item" href="#" id="logoutBtn"><i class="bi bi-box-arrow-right me-2"></i> Déconnexion</a></li></ul>
+            </div>
+        </header>
+
+        <section class="row g-3 mb-4">
+            <div class="col-lg-6">
+                <article class="card stat-block h-100">
+                    <header class="card-header">Activité des Livreurs (<span id="stats-period-display-activite">Aujourd'hui</span>)</header>
+                    <div class="card-body p-2">
+                        <div class="row gx-0">
+                            <div class="col-3 stat-card-sm"><p id="total-deliverymen" class="stat-value">--</p><p class="stat-label">Total Actifs</p></div>
+                            <div class="col-3 stat-card-sm"><p id="working-deliverymen" class="stat-value text-success">--</p><p class="stat-label">Présents/Actifs</p></div>
+                            <div class="col-3 stat-card-sm"><p id="absent-deliverymen" class="stat-value text-danger">--</p><p class="stat-label">Absents</p></div>
+                            <div class="col-3 stat-card-sm"><p id="availability-rate" class="stat-value text-info">--%</p><p class="stat-label">Disponibilité</p></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-6">
+                 <article class="card stat-block h-100">
+                    <header class="card-header">Statut des Courses (<span id="stats-period-display-courses">Aujourd'hui</span>)</header>
+                    <div class="card-body p-2">
+                        <div class="row gx-0">
+                            <div class="col-3 stat-card-sm"><p id="received-courses" class="stat-value">--</p><p class="stat-label">Reçues</p></div>
+                            <div class="col-3 stat-card-sm"><p id="inprogress-courses" class="stat-value text-warning">--</p><p class="stat-label">En Cours</p></div>
+                            <div class="col-3 stat-card-sm"><p id="delivered-courses" class="stat-value text-success">--</p><p class="stat-label">Livrées</p></div>
+                            <div class="col-3 stat-card-sm"><p id="canceled-courses" class="stat-value text-danger">--</p><p class="stat-label">Annulées/Ratées</p></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="filter-section card mb-4">
+            <form class="row g-3 align-items-end">
+                <div class="col-lg-3 col-md-6">
+                    <label for="startDate" class="form-label form-label-sm">Date de début</label>
+                    <input type="date" id="startDate" class="form-control form-control-sm">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <label for="endDate" class="form-label form-label-sm">Date de fin</label>
+                    <input type="date" id="endDate" class="form-control form-control-sm">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <label for="searchInput" class="form-label form-label-sm">Rechercher</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Nom du livreur..." id="searchInput">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex gap-2">
+                     <button id="filterBtn" type="button" class="btn btn-sm btn-primary-custom flex-fill"><i class="bi bi-funnel me-1"></i> Filtrer</button>
+                     <div class="dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Actions Groupées Admin">
+                            <i class="bi bi-people-fill"></i> Actions Groupées
+                        </button>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#bulkSalaryModal"><i class="bi bi-currency-euro me-2"></i> Appliquer Salaire Moto</a></li>
+                             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#bulkCommissionModal"><i class="bi bi-percent me-2"></i> Appliquer % Pied</a></li>
+                             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#bulkObjectiveModal"><i class="bi bi-bullseye me-2"></i> Définir Objectif Moto</a></li>
+                             <li><hr class="dropdown-divider"></li>
+                             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#absencesModal"><i class="bi bi-calendar-x me-2"></i> Gérer Absences/Fériés</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="card flex-grow-1">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Livreur</th> <th>Reçues (Période)</th>
+                                <th class="text-warning">En Cours (Période)</th>
+                                <th class="text-danger">Annulées/Ratées (Période)</th>
+                                <th class="text-success">Livrées* (Période)</th> <th class="text-end">CA Généré (Frais) (Période)</th>
+                                <th class="text-center">Actions</th> </tr>
+                        </thead>
+                        <tbody id="deliverymenTableBody">
+                            <tr><td colspan="7" class="text-center p-5"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Chargement...</span></div></td></tr>
+                        </tbody>
+                    </table>
+                    <small class="d-block p-2 text-muted">* Les courses "Livrées" incluent les livraisons réussies et les livraisons ratées.</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="livreurDetailsModal" tabindex="-1" aria-labelledby="livreurDetailsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="livreurDetailsModalLabel">Gestion du Livreur : <span id="modalLivreurName" class="fw-bold"></span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </header>
+          <div class="modal-body">
+            <nav>
+                <ul class="nav nav-tabs mb-3" id="detailsTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance-tab-pane" type="button" role="tab" aria-controls="performance-tab-pane" aria-selected="true"><i class="bi bi-graph-up me-2"></i>Performance</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="journal-tab" data-bs-toggle="tab" data-bs-target="#journal-tab-pane" type="button" role="tab" aria-controls="journal-tab-pane" aria-selected="false"><i class="bi bi-journal-text me-2"></i>Journal</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings-tab-pane" type="button" role="tab" aria-controls="settings-tab-pane" aria-selected="false"><i class="bi bi-sliders me-2"></i>Paramètres</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="absences-tab" data-bs-toggle="tab" data-bs-target="#absences-tab-pane" type="button" role="tab" aria-controls="absences-tab-pane" aria-selected="false"><i class="bi bi-calendar-x me-2"></i>Absences</button>
+                  </li>
+                </ul>
+            </nav>
+            <div class="tab-content pt-3" id="detailsTabContent">
+              <section class="tab-pane fade show active" id="performance-tab-pane" role="tabpanel" aria-labelledby="performance-tab">
+                <h6>Performance Détaillée</h6>
+                <div class="row align-items-end">
+                    <div class="col-md-4 mb-3">
+                         <label for="modalPerformancePeriod" class="form-label form-label-sm">Afficher pour :</label>
+                         <select id="modalPerformancePeriod" class="form-select form-select-sm">
+                            <option value="today">Aujourd'hui</option>
+                            <option value="current_week">Cette Semaine</option>
+                            <option value="current_month" selected>Ce Mois</option>
+                            <option value="last_month">Mois Dernier</option>
+                            </select>
+                    </div>
+                </div>
+                <div id="modalPerformanceContent" class="mt-3">
+                    <div class="text-center p-5"><div class="spinner-border spinner-border-sm"></div> Chargement performance...</div>
+                </div>
+              </section>
+              
+              <section class="tab-pane fade" id="journal-tab-pane" role="tabpanel" aria-labelledby="journal-tab">
+                    <h6>Journal de Performance (Mois Sélectionné)</h6>
+                     <div class="alert alert-info small">Détail journalier pour la période sélectionnée dans l'onglet "Performance". Une livraison ratée est comptée comme livrée ici.</div>
+                     
+                     <div class="journal-scroll-container"> 
+                        <div class="table-responsive"> 
+                            <table class="table table-sm table-striped table-bordered journal-table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Date</th>
+                                        <th class="text-center">Reçues</th>
+                                        <th class="text-center">Livrées*</th>
+                                        <th class="text-end">CA (Frais)</th>
+                                        <th class="text-end">Dépenses</th>
+                                        <th class="text-end">Résultat Net</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="performanceJournalBody">
+                                    <tr><td colspan="6" class="text-center p-3 text-muted">Chargement du journal...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                     </div>
+              </section>
+              
+              <section class="tab-pane fade" id="settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab">
+                <h6>Paramètres du Livreur</h6>
+                <form id="livreurSettingsForm">
+                  <input type="hidden" id="settingLivreurUserId">
+                  <div class="alert alert-secondary small">Définissez ici le type de contrat, le salaire/commission et l'objectif mensuel pour ce livreur.</div>
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <label for="settingVehicleType" class="form-label">Type de Livreur <span class="text-danger">*</span></label>
+                      <select id="settingVehicleType" class="form-select" required>
+                        <option value="" disabled selected>Choisir...</option>
+                        <option value="pied">À Pied</option>
+                        <option value="moto">Moto</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="settingBaseSalary" class="form-label">Salaire de Base (FCFA)</label>
+                      <input type="number" id="settingBaseSalary" class="form-control" placeholder="Pour Moto" min="0" step="1000">
+                    </div>
+                     <div class="col-md-4">
+                      <label for="settingCommissionRate" class="form-label">Taux Commission (%)</label>
+                      <input type="number" id="settingCommissionRate" class="form-control" placeholder="Pour Pied (ex: 45)" min="0" max="100" step="1">
+                      </div>
+                     <div class="col-md-4">
+                      <label for="settingMonthlyObjective" class="form-label">Objectif Mensuel (Courses)</label>
+                      <input type="number" id="settingMonthlyObjective" class="form-control" placeholder="Pour Moto" min="0" step="1">
+                    </div>
+                     <div class="col-md-4">
+                        <label for="settingUserStatus" class="form-label">Statut du Compte <span class="text-danger">*</span></label>
+                        <select id="settingUserStatus" class="form-select" required>
+                             <option value="actif">Actif</option>
+                             <option value="inactif">Inactif</option>
+                        </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary-custom mt-3"><i class="bi bi-save me-1"></i> Enregistrer</button>
+                  <div id="settingsFeedback" class="mt-2 small"></div>
+                </form>
+              </section>
+              
+              <section class="tab-pane fade" id="absences-tab-pane" role="tabpanel" aria-labelledby="absences-tab">
+                 <div class="d-flex justify-content-between align-items-center mb-3">
+                     <h6>Gestion des Absences et Permissions</h6>
+                     <button class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#addAbsenceModal"><i class="bi bi-plus-circle me-1"></i> Ajouter</button>
+                 </div>
+                 <div id="modalAbsencesList">
+                    <p class="text-muted">Chargement...</p>
+                 </div>
+              </section>
+            </div>
+          </div>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="addAbsenceModal" tabindex="-1" aria-labelledby="addAbsenceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <header class="modal-header"><h5 class="modal-title" id="addAbsenceModalLabel">Ajouter Absence/Permission</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></header>
+                <form id="addAbsenceForm">
+                     <div class="modal-body">
+                        <input type="hidden" id="absenceLivreurUserId">
+                        <div class="mb-3"><label for="absenceDate" class="form-label">Date <span class="text-danger">*</span></label><input type="date" id="absenceDate" class="form-control" required></div>
+                        <div class="mb-3">
+                            <label for="absenceType" class="form-label">Type <span class="text-danger">*</span></label>
+                            <select id="absenceType" class="form-select" required> <option value="absence">Absence</option> <option value="permission">Permission</option> </select>
+                        </div>
+                        <div class="mb-3"><label for="absenceMotif" class="form-label">Motif (Optionnel)</label><textarea id="absenceMotif" class="form-control" rows="2"></textarea></div>
+                    </div>
+                    <footer class="modal-footer"> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button> <button type="submit" class="btn btn-primary-custom">Enregistrer</button> </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="absencesModal" tabindex="-1" aria-labelledby="absencesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <header class="modal-header"><h5 class="modal-title" id="absencesModalLabel">Gérer Absences & Jours Fériés</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></header>
+                <div class="modal-body">
+                    <form id="manageAbsenceForm" class="mb-4 p-3 border rounded bg-light-subtle">
+                        <h6>Ajouter un événement</h6>
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-4"><label for="manageAbsenceDate" class="form-label">Date <span class="text-danger">*</span></label><input type="date" id="manageAbsenceDate" class="form-control" required></div>
+                            <div class="col-md-4"><label for="manageAbsenceType" class="form-label">Type <span class="text-danger">*</span></label><select id="manageAbsenceType" class="form-select" required><option value="ferie">Jour Férié (Tous)</option><option value="absence">Absence (Spécifique)</option><option value="permission">Permission (Spécifique)</option></select></div>
+                            <div class="col-md-4"><label for="manageAbsenceMotif" class="form-label">Motif/Nom <span class="text-danger">*</span></label><input type="text" id="manageAbsenceMotif" class="form-control" required placeholder="Ex: Tabaski, Congé X..."></div>
+                            <div class="col-md-9"><label for="manageAbsenceLivreurSelect" class="form-label">Livreur(s) concerné(s)</label><select id="manageAbsenceLivreurSelect" class="form-select" multiple disabled></select><small class="form-text text-muted">Sélection multiple (Ctrl+Clic). Requis si type != "Jour Férié".</small></div>
+                            <div class="col-md-3 text-end"><button type="submit" class="btn btn-primary-custom w-100">Ajouter</button></div>
+                        </div>
+                    </form>
+                    <h6>Événements Enregistrés (<span id="absenceListPeriod">Période...</span>)</h6>
+                    <div id="absencesEventsList" style="max-height: 250px; overflow-y: auto;"><p class="text-muted">Chargement...</p></div>
+                </div>
+                <footer class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button></footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bulkSalaryModal" tabindex="-1" aria-labelledby="bulkSalaryModalLabel" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered"> <div class="modal-content"> <header class="modal-header"><h5 class="modal-title" id="bulkSalaryModalLabel">Appliquer Salaire de Base (Moto)</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></header> <form id="bulkSalaryForm"> <div class="modal-body"> <p>Appliquer ce salaire de base à <strong>tous les livreurs de type Moto</strong> ?</p> <div class="mb-3"> <label for="bulkSalaryAmount" class="form-label">Nouveau Salaire de Base (FCFA)</label> <input type="number" id="bulkSalaryAmount" class="form-control" required min="0" step="1000"> </div> </div> <footer class="modal-footer"> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button> <button type="submit" class="btn btn-primary-custom">Appliquer à tous</button> </footer> </form> </div> </div> </div>
+    <div class="modal fade" id="bulkCommissionModal" tabindex="-1" aria-labelledby="bulkCommissionModalLabel" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered"> <div class="modal-content"> <header class="modal-header"><h5 class="modal-title" id="bulkCommissionModalLabel">Appliquer Taux Commission (Pied)</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></header> <form id="bulkCommissionForm"> <div class="modal-body"> <p>Appliquer ce taux de commission à <strong>tous les livreurs de type Pied</strong> ?</p> <div class="mb-3"> <label for="bulkCommissionRate" class="form-label">Nouveau Taux de Commission (%)</label> <input type="number" id="bulkCommissionRate" class="form-control" required min="0" max="100" step="1"> </div> </div> <footer class="modal-footer"> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button> <button type="submit" class="btn btn-primary-custom">Appliquer à tous</button> </footer> </form> </div> </div> </div>
+    <div class="modal fade" id="bulkObjectiveModal" tabindex="-1" aria-labelledby="bulkObjectiveModalLabel" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered"> <div class="modal-content"> <header class="modal-header"><h5 class="modal-title" id="bulkObjectiveModalLabel">Définir Objectif Mensuel (Moto)</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></header> <form id="bulkObjectiveForm"> <div class="modal-body"> <p>Définir cet objectif pour <strong>tous les livreurs de type Moto</strong> pour le mois sélectionné ?</p> <div class="row g-3"> <div class="col-md-6"> <label for="bulkObjectiveMonth" class="form-label">Mois Concerné</label> <input type="month" id="bulkObjectiveMonth" class="form-control" required> </div> <div class="col-md-6"> <label for="bulkObjectiveTarget" class="form-label">Objectif (Nb Courses)</label> <input type="number" id="bulkObjectiveTarget" class="form-control" required min="1"> </div> </div> </div> <footer class="modal-footer"> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button> <button type="submit" class="btn btn-primary-custom">Définir pour le mois</button> </footer> </form> </div> </div> </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/deliverymenManager.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/idb@7/build/umd.js"></script>
+    <script src="/js/pwa-loader.js" defer></script>
+</body>
+</html>
